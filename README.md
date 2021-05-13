@@ -45,7 +45,9 @@ We will be using the website mentioned (https://ourworldindata.org/covid-vaccina
 
 ##### 1.2.5 Top 100 hotels, airbnb with 4* and 5* reviews for upkeeping covid safety protocols.
 
-##### 1.2.6 Direct flights availability from one destination to another. (Find an API- Goodluck) 
+##### 1.2.6 Direct flights availability from one destination to another. (Find an API- Goodluck)
+###### https://aviationstack.com/quickstart
+        api = “48f8feb6ff5fae068b1172d1c5605418”
 
 ###### Sample Model: US, Isreal, UK 
 
