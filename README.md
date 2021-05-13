@@ -1,8 +1,16 @@
 # Post_COVID-19_Vacation_Projection 
 
 Selected topic
+- Help travellers plan their next vacation by determining when countries will reach herd immunity based on their current vaccination rate. 
+
 Reason they selected the topic
+- COVID-19 has impacted many people around the world and many people are eager to travel. A major barrier to travelling right now is safety. Based on the current vaccination rates in each country we are going to determine when each country will reach herd immunity. Herd immunity is reached when approximately 70% of the population is vaccinated. 
+
 Description of the source of data
+- Data is being used from Our World in Data
+
+Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021). https://doi.org/10.1038/s41562-021-01122-8
+
 Questions they hope to answer with the data
 
 
