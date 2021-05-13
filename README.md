@@ -3,7 +3,7 @@
 Selected topic
 - Help travellers plan their next vacation by determining when countries will reach herd immunity based on their current vaccination rate. 
 
-Reason they selected the topic
+Reason we selected the topic
 - COVID-19 has impacted many people around the world and many people are eager to travel. A major barrier to travelling right now is safety. Based on the current vaccination rates in each country we are going to determine when each country will reach herd immunity. Herd immunity is reached when approximately 70% of the population is vaccinated. 
 
 Description of the source of data
