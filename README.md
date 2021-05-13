@@ -8,6 +8,7 @@ Reason they selected the topic
 
 Description of the source of data
 - Data is being used from Our World in Data
+- https://ourworldindata.org/covid-vaccinations
 
 Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021). https://doi.org/10.1038/s41562-021-01122-8
 
