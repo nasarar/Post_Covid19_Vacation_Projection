@@ -54,7 +54,7 @@ We will be using the website mentioned (https://ourworldindata.org/covid-vaccina
 ###### Data Storage: Postgres
 
 ##### ML Model: 
-Supervised Machine Learning (Easy Ensemble Classifier) **notsure** 
+Time Series Regression Model
 
 ##### Database: 
 Postgres, SQL and Python 
