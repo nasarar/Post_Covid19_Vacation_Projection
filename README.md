@@ -22,7 +22,7 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 
 ### 1.1.0 Project: Interactive website for Post covid19 Vacation Planner
 
-•	Using Leaflet, mapping, and other tools to create visual representation of the results. 
+•	Using Leaflet, mapping, and other tools to create visual representation of the results. e.g. Matplot lib to create bar charts. 
 
 •	Users will be able to input information
 
@@ -51,7 +51,13 @@ We will be using the website mentioned (https://ourworldindata.org/covid-vaccina
 
 ###### Sample Model: US, Isreal, UK 
 
-###### Data Storage: Postgres or AWS 
+###### Data Storage: Postgres
+
+##### ML Model: 
+Supervised Machine Learning (Easy Ensemble Classifier) **notsure** 
+
+##### Database: 
+Postgres, SQL and Python 
 
 ## 2.1.0 Second Segment: Build the Pieces: Train your model and build out the database you will use for your final presentation.
 
