@@ -59,17 +59,17 @@ Time Series Regression Model
 ##### Database: 
 Postgres, SQL and Python 
 
-## 2.1.0 Second Segment: Build the Pieces: Train your model and build out the database you will use for your final presentation.
+##### 2.1.0 Second Segment: Build the Pieces: Train your model and build out the database you will use for your final presentation.
 
-### 2.1.1 Data Gathering 
-### 2.1.2 Data pre-processing- Amandah
-#### Python- Clean, prepare, explore
-#### Libraries – Python and Javascript 
-#### Tableau, Leaflet, Mapping– To visualize – Maneet and Zaineb 
-### 2.1.3 Researching the model that will be best for the type of data- Ryan
-### 2.1.4 Training and testing the model- Everyone (Testing the 3 countries only first)
-### 2.1.5 Evaluation- Everyone (Testing the 3 countries only) 
+##### 2.1.1 Data Gathering 
+#####  2.1.2 Data pre-processing- Amandah
+######  Python- Clean, prepare, explore
+###### Libraries – Python and Javascript 
+###### Tableau, Leaflet, Mapping– To visualize – Maneet and Zaineb 
+#####2.1.3 Researching the model that will be best for the type of data- Ryan
+#####2.1.4 Training and testing the model- Everyone (Testing the 3 countries only first)
+##### 2.1.5 Evaluation- Everyone (Testing the 3 countries only) 
 
-## 3.1.0 Third Segment: Plug It In: 
-## 4.1.0 Fourth Segment: Put it all together
+##### 3.1.0 Third Segment: Plug It In: 
+##### 4.1.0 Fourth Segment: Put it all together
 
