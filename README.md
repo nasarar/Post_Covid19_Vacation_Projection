@@ -56,7 +56,7 @@ We will be using the website mentioned (https://ourworldindata.org/covid-vaccina
 ##### ML Model: 
 Time Series Regression Model
 -	We will be using regression as we are predicting a quantity -> when are we going to reach 70%?
--	We will be able to answer this question and predict a future response based on past observational data. 
+-	We will be able to answer this question and predict a future response based on past trends and observational data. 
 ##### Database: 
 Postgres, SQL and Python 
 
