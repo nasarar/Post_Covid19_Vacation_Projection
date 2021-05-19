@@ -55,8 +55,8 @@ We will be using the website mentioned (https://ourworldindata.org/covid-vaccina
 
 ##### ML Model: 
 Time Series Regression Model
--	We will be using regression as we are predicting a quantity -> when are we going to reach 70%?
--	We will be able to answer this question and predict a future response based on past trends and observational data. 
+-	We will be using regression model for time series data to predict when 70% of the population will be fully vaccinated, hence achieving herd immunity. 
+-	We will be able to answer this question and predict a future response based on past trends and observational data, given that vaccination is a continuous variable 
 ##### Database: 
 Postgres, SQL and Python 
 
