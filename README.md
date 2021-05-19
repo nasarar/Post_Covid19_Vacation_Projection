@@ -4,7 +4,7 @@
 
 •	Help travellers plan their next vacation by determining when countries will reach herd immunity based on their current vaccination rate. 
 
-## Reason they selected the topic: 
+## Reason we selected the topic: 
 
 •	COVID-19 has impacted many people around the world and many people are eager to travel. A major barrier to travelling right now is safety. Based on the current vaccination rates in each country we are going to determine when each country will reach herd immunity. Herd immunity is reached when approximately 70% of the population is fully vaccinated. 
 
@@ -15,16 +15,16 @@
 
 Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021). https://doi.org/10.1038/s41562-021-01122-8
 
-## Questions they hope to answer with the data
+## Questions we hope to answer with the data
 
 ## 1.1.0 Sketch It Out: Define Problem we plan to solve 
 •	When will countries reach herd immunity for safe travelling? 
 
-### 1.1.0 Project: Interactive website for Post covid19 Vacation Planner
+### 1.1.0 Project: Interactive website for Post COVID-19 Vacation Planner
 
 •	Using Leaflet, mapping, and other tools to create visual representation of the results. e.g. Matplot lib to create bar charts. 
 
-•	Users will be able to input information
+•	Users will be able to input information (e.g. Country they chose to travel to)
 
 ### 1.2.0 Key Queries for Planner 
 #### 1.2.1 Safe Vacation country identifier: 
@@ -33,13 +33,13 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 
 #### 1.2.2 Hot spots identifier around the world
 
--	To test our model: first we will focus on US, Isreal and UK, the countries that are doing good with vaccinating their population. 
--	
+-	We will test our model on countries that are doing well with their vaccination efforts. The United States, Israel and United Kingdom will be used. 
+	
 #### 1.2.3 Status update for top 10 high frequency frequently visited vacation spots
 
 ###### Link : https://caen-keepexploring.canada.travel/things-to-do/10-surprising-places-ontario
 
-##### 1.2.4 Full vaccinated population status: 
+##### 1.2.4 Fully vaccinated population status: 
 
 We will be using the website mentioned (https://ourworldindata.org/covid-vaccinations) 
 
