@@ -35,6 +35,12 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 •	Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7 
 
 ## Machine Learning Model 
+ 
+Time Series Regression Model
+-	We will be using regression model for time series data to predict when 70% of the population will be fully vaccinated, hence achieving herd immunity. 
+-	We will be able to answer this question and predict a future response based on past trends and observational data, given that vaccination is a continuous variable 
 
-•
+## Database: 
+SQLite
+
 
