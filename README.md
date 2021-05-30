@@ -30,6 +30,10 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 
 •	The website will also generate a list of flights based on the departure/return date
 
+•	Users will be notified of travel advisories and whether it is safe to travel to that country. 
+
+•	Website will include graphs that reflect COVID-19 vaccination data (percentage of individuals that are fully vaccinated)
+
 •	Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7 
 
 ### 1.2.0 Key Queries for Planner 
