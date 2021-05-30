@@ -36,6 +36,11 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 
 •	Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7 
 
+## Machine Learning Model 
+
+•
+
+
 ### 1.2.0 Key Queries for Planner 
 #### 1.2.1 Safe Vacation country identifier: 
 
