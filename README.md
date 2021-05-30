@@ -28,7 +28,7 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 
 • 	Once the user has entered the departure or destination countries, the website will generate when herd immunity will be reached in those countries in 	accordance with our machine learning model. 
 
-•	The website will also generate a list of flights based on the departure/return date
+•	The website will also generate a list of flights based on the departure/return date.
 
 •	Users will be notified of travel advisories and whether it is safe to travel to that country. 
 
