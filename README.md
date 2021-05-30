@@ -17,7 +17,7 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 
 ## Questions we hope to answer with the data
 
-## Defining the problem wew plan to solve.
+## Defining the problem we plan to solve.
 •	When will countries reach herd immunity for safe travelling? 
 
 ## Project: Interactive website for Post COVID-19 Vacation Planner
@@ -68,7 +68,7 @@ Time Series Regression Model
 -	We will be using regression model for time series data to predict when 70% of the population will be fully vaccinated, hence achieving herd immunity. 
 -	We will be able to answer this question and predict a future response based on past trends and observational data, given that vaccination is a continuous variable 
 ##### Database: 
-Postgres, SQL and Python 
+SQLite
 
 ##### 2.1.0 Second Segment: Build the Pieces: Train your model and build out the database you will use for your final presentation.
 
