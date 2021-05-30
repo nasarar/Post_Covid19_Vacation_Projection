@@ -22,7 +22,7 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 
 ## Project: Interactive website for Post COVID-19 Vacation Planner
 
-•	Using JavaScript for front-end development, as well as Leaflet library and other tools to create visual representation of our data and results.
+•	Using JavaScript and HTML for front-end development, as well as Leaflet library and other tools to create visual representation of our data and results.
 
 •	Users will be able to input information (e.g. Country they chose to travel to)
 
