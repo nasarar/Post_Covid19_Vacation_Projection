@@ -24,7 +24,7 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 
 •	Using JavaScript and HTML for front-end development, as well as Leaflet library and other tools to create visual representation of our data and results.
 
-•	Users will be able to input information (e.g. Country they chose to travel to)
+•	Users will be able to input information (e.g. Country they choose to travel to)
 
 • 	Once the user has entered the departure or destination countries, the website will generate when herd immunity will be reached in those countries in 	accordance with our machine learning model. 
 
