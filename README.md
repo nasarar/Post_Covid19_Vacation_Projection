@@ -22,13 +22,15 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 
 ### 1.1.0 Project: Interactive website for Post COVID-19 Vacation Planner
 
-•	Using Leaflet, mapping, and other tools to create visual representation of the results
+•	Using JavaScript for front-end development, as well as Leaflet library and other tools to create visual representation of our data and results.
 
 •	Users will be able to input information (e.g. Country they chose to travel to)
 
-• 	Once the user has entered the departure and destination countries, the website will generate when herd immunity will be reached in those countries in 	accordance with our machine learning model. 
+• 	Once the user has entered the departure or destination countries, the website will generate when herd immunity will be reached in those countries in 	accordance with our machine learning model. 
 
 •	The website will also generate a list of flights based on the departure/return date
+
+•	Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7 
 
 ### 1.2.0 Key Queries for Planner 
 #### 1.2.1 Safe Vacation country identifier: 
