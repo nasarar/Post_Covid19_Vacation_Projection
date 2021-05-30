@@ -26,13 +26,13 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 
 •	Users will be able to input information (e.g. Country they choose to travel to)
 
-• 	Once the user has entered the departure or destination countries, the website will generate when herd immunity will be reached in those countries in 	accordance with our machine learning model. 
+• 	Once the user has entered the departure and destination country, the website will generate when herd immunity will be reached in those countries in accordance with our machine learning model. 
 
 •	The website will also generate a list of flights based on the departure/return date.
 
 •	Users will be notified of travel advisories and whether it is safe to travel to that country. 
 
-•	Website will include graphs that reflect COVID-19 vaccination data (percentage of individuals that are fully vaccinated)
+•	The user will be able to view further details of how herd immunity was calculate through a graph that reflects COVID-19 vaccination data (percentage of individuals that are fully vaccinated)
 
 •	Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7 
 
