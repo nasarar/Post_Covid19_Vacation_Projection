@@ -17,10 +17,10 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 
 ## Questions we hope to answer with the data
 
-## 1.1.0 Sketch It Out: Define Problem we plan to solve 
+## Defining the problem wew plan to solve.
 •	When will countries reach herd immunity for safe travelling? 
 
-### 1.1.0 Project: Interactive website for Post COVID-19 Vacation Planner
+## Project: Interactive website for Post COVID-19 Vacation Planner
 
 •	Using JavaScript for front-end development, as well as Leaflet library and other tools to create visual representation of our data and results.
 
