@@ -10,8 +10,8 @@
 
 ## Description of the source of data: 
 
-- Data is being used from Our World in Data for all countries but firstly to test our model, we will be using 3 countries. 
-- Website: https://ourworldindata.org/covid-vaccinations
+• Data is being used from Our World in Data for all countries but firstly to test our model, we will be using 3 countries. 
+• Website: https://ourworldindata.org/covid-vaccinations
 
 Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021). https://doi.org/10.1038/s41562-021-01122-8
 
@@ -37,8 +37,8 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 ## Machine Learning Model 
  
 Time Series Regression Model
--	We will be using regression model for time series data to predict when 70% of the population will be fully vaccinated, hence achieving herd immunity. 
--	We will be able to answer this question and predict a future response based on past trends and observational data, given that vaccination is a continuous variable 
+•	We will be using regression model for time series data to predict when 70% of the population will be fully vaccinated, hence achieving herd immunity. 
+•	We will be able to answer this question and predict a future response based on past trends and observational data, given that vaccination is a continuous variable 
 
 ## Database: 
 SQLite
