@@ -22,9 +22,13 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 
 ### 1.1.0 Project: Interactive website for Post COVID-19 Vacation Planner
 
-•	Using Leaflet, mapping, and other tools to create visual representation of the results. e.g. Matplot lib to create bar charts. 
+•	Using Leaflet, mapping, and other tools to create visual representation of the results
 
 •	Users will be able to input information (e.g. Country they chose to travel to)
+
+• 	Once the user has entered the departure and destination countries, the website will generate when herd immunity will be reached in those countries in 	accordance with our machine learning model. 
+
+•	The website will also generate a list of flights based on the departure/return date
 
 ### 1.2.0 Key Queries for Planner 
 #### 1.2.1 Safe Vacation country identifier: 
