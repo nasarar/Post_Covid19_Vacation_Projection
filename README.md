@@ -47,6 +47,11 @@ Develop a prototype
 ### 2.1.4 Training and testing the model
 ### 2.1.5 Evaluation
 
+## Link for Dashboard Presentation 
+https://docs.google.com/presentation/d/10SREyI6aJZHYDQQToGYDDiN4IGymO-KeN4DXxd2qc8g/edit?usp=sharing
+
+
+
 
 ## 3.1.0 Third Segment: Plug It In: 
 ## 4.1.0 Fourth Segment: Put it all together 
