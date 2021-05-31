@@ -40,7 +40,6 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 ## Database: 
 SQLite
 
-<<<<<<< HEAD
 We will be using the website mentioned (https://ourworldindata.org/covid-vaccinations) 
 
 ##### 1.2.5 Top 100 hotels, airbnb with 4* and 5* reviews for upkeeping covid safety protocols.
@@ -72,6 +71,4 @@ Postgres, SQL and Python
 
 ## 3.1.0 Third Segment: Plug It In: 
 ## 4.1.0 Fourth Segment: Put it all together
-=======
->>>>>>> 3ef61f07e90a6c5d552a846db531873bbdd86774
 
