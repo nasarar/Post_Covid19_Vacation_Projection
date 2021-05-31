@@ -40,35 +40,3 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 ## Database: 
 SQLite
 
-We will be using the website mentioned (https://ourworldindata.org/covid-vaccinations) 
-
-##### 1.2.5 Top 100 hotels, airbnb with 4* and 5* reviews for upkeeping covid safety protocols.
-
-##### 1.2.6 Direct flights availability from one destination to another. (Find an API- Goodluck)
-###### https://aviationstack.com/quickstart
-        api = “48f8feb6ff5fae068b1172d1c5605418”
-
-###### Sample Model: US, Isreal, UK 
-
-###### Data Storage: Postgres
-
-##### ML Model: 
-Time Series Regression Model
-
-##### Database: 
-Postgres, SQL and Python 
-
-## 2.1.0 Second Segment: Build the Pieces: Train your model and build out the database you will use for your final presentation.
-
-### 2.1.1 Data Gathering 
-### 2.1.2 Data pre-processing- Amandah
-#### Python- Clean, prepare, explore
-#### Libraries – Python and Javascript 
-#### Tableau, Leaflet, Mapping– To visualize – Maneet and Zaineb 
-### 2.1.3 Researching the model that will be best for the type of data- Ryan
-### 2.1.4 Training and testing the model- Everyone (Testing the 3 countries only first)
-### 2.1.5 Evaluation- Everyone (Testing the 3 countries only) 
-
-## 3.1.0 Third Segment: Plug It In: 
-## 4.1.0 Fourth Segment: Put it all together
-
