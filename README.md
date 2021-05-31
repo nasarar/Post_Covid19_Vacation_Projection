@@ -54,4 +54,7 @@ of December 19th, 2020. In addition, there are extra inputs on the location that
 
 ## Database: 
 SQLite
+- Script.py is uploaded in the github. It is a script for the database tables using sqllite. 
+- Covid19_projection_db file is uploaded in github. We will be using SQLAlchemy.
+
 
