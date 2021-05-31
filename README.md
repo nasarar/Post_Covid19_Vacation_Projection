@@ -42,13 +42,13 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 of December 19th, 2020. In addition, there are extra inputs on the location that arer aggregations of a number of countries. For example, 'world' is added to aggregate the world data. Therefore these entries are dropped.
 
 -	Initial features for the model include:
-		- location
-		- date
-		- people_vaccinated
-		- people_fully_vaccinated
-		- population
-		- population_density
-		- gdp_per_capita
+	- location
+	- date
+	- people_vaccinated
+	- people_fully_vaccinated
+	- population
+	- population_density
+	- gdp_per_capita
 
 - The model of choice is the Autoregressive Integrated Moving Average (ARIMA) model due to the time series nature of the data and the problem. However, the model has its limitations especially for long term forecasting. Since the model puts more weight on its most recent past data, there will be a time that the model will be forecasting based off of its own forecast thus creating a higher margin of error.
 
