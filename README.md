@@ -1,58 +1,60 @@
-# Post_COVID-19_Vacation_Projection 
+# Post COVID-19 Vacation Projection 
 
-Selected topic
-- Help travellers plan their next vacation by determining when countries will reach herd immunity based on their current vaccination rate. 
+## Selected topic
 
-Reason they selected the topic
-- COVID-19 has impacted many people around the world and many people are eager to travel. A major barrier to travelling right now is safety. Based on the current vaccination rates in each country we are going to determine when each country will reach herd immunity. Herd immunity is reached when approximately 70% of the population is vaccinated. 
+-	Help travellers plan their next vacation by determining when countries will reach herd immunity based on their current vaccination rate. 
 
-Description of the source of data
-- Data is being used from Our World in Data
+## Reason we selected the topic: 
+
+-	COVID-19 has impacted many people around the world and many people are eager to travel. A major barrier to travelling right now is safety. Based on the current vaccination rates in each country we are going to determine when each country will reach herd immunity. Herd immunity is reached when approximately 70% of the population is fully vaccinated. 
+
+## Description of the source of data: 
+
+- Data is being used from Our World in Data for all countries but firstly to test our model, we will be using 3 countries. 
+- Website: https://ourworldindata.org/covid-vaccinations
 
 Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021). https://doi.org/10.1038/s41562-021-01122-8
 
-Questions they hope to answer with the data
+## Defining the problem we plan to solve.
+-	When will countries reach herd immunity for safe travelling? 
+
+## Project: Interactive website for Post COVID-19 Vacation Planner
+
+-	Using JavaScript and HTML for front-end development, as well as Leaflet library and other tools to create visual representation of our data and results.
+
+-	Users will be able to input information (e.g. Country they choose to travel to)
+
+- 	Once the user has entered the departure and destination country, the website will generate when herd immunity will be reached in those countries in accordance with our machine learning model. 
+
+-	The website will also generate a list of flights based on the departure/return date.
+
+-	Users will be notified of travel advisories and whether it is safe to travel to that country. 
+
+-	The user will be able to view further details of how herd immunity was calculate through a graph that reflects COVID-19 vaccination data (percentage of individuals that are fully vaccinated)
+
+-	Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7 
+
+## Machine Learning Model 
+ 
 
 
+-	During the initial investigation of the dataset, the interval between date entries are not consistent, some are updated daily and some are updated less frequently; this resulted in plenty of missing value. To mitigate the problem that would fit best the Arima model, the empty rows are filled using the pivot and melt method. With this method, all the countries would have the same number of entries starting at the original point
+of December 19th, 2020. In addition, there are extra inputs on the location that arer aggregations of a number of countries. For example, 'world' is added to aggregate the world data. Therefore these entries are dropped.
 
-## 1.1.0 Sketch It Out::Define Problem we plan to solve 
+-	Initial features for the model include:
+	- location
+	- date
+	- people_vaccinated
+	- people_fully_vaccinated
+	- population
+	- population_density
+	- gdp_per_capita
 
-### 1.1.0 Project: Interactive website for Post covid19 Vacation Planner
-### 1.2.0 Key Queries for Planner 
-#### 1.2.1 Safe Vacation spot identifier 
-#### 1.2.2 Hot spots identifier around the world- Sample model Ontario 
-#### 1.2.3 Status update for top 100 high frequency frequently visited vacation spots
-###### Link : https://caen-keepexploring.canada.travel/things-to-do/10-surprising-places-ontario
-##### 1.2.4 Full vaccinated population status 
-            https://data.ontario.ca/dataset/covid-19-vaccine-data-in-ontario/resource/8a89caa9-511c-4568-af89-7f2174b4378c
-##### 1.2.5 Top 100 hotels, airbnb with 4* and 5* reviews for upkeeping covid safety protocols.
-##### 1.2.6 Last 7 days updated covid positive cases
-      https://data.ontario.ca/dataset/status-of-covid-19-cases-in-ontario/resource/ed270bb8-340b-41f9-a7c6-e8ef587e6d11
-##### 1.2.7 Deaths in last 7 days 
-##### 1.2.8 Number of Hospitals in the top 100 locations (vacation spots).
-##### 1.2.9 Direct flights availability from YYZ 
-##### 1.2.10 Types of restaurants in the locations 
-###### Sample Model: Ontario 
-###### Data Storage : Postgres
-            https://data.ontario.ca/dataset?keywords_en=COVID-19Data: Sample Data for Ontario Region
-Develop a prototype 
+- The model of choice is the Autoregressive Integrated Moving Average (ARIMA) model due to the time series nature of the data and the problem. However, the model has its limitations especially for long term forecasting. Since the model puts more weight on its most recent past data, there will be a time that the model will be forecasting based off of its own forecast thus creating a higher margin of error.
 
-## 2.1.0 Second Segment: Build the Pieces: Train your model and build out the database you'll use for your final presentation.
-### 2.1.1 Data Gathering
-### 2.1.2 Data pre-processing
-#### Python- Clean , prepare, explore
-#### Libraries – Python and Javascript 
-#### Tableau – To visualize 
-### 2.1.3 Researching the model that will be best for the type of data
-### 2.1.4 Training and testing the model
-### 2.1.5 Evaluation
-
-## Link for Dashboard Presentation 
-https://docs.google.com/presentation/d/10SREyI6aJZHYDQQToGYDDiN4IGymO-KeN4DXxd2qc8g/edit?usp=sharing
+## Database: 
+SQLite
+- Script.py is uploaded in the github. It is a script for the database tables using sqllite. 
+- Covid19_projection_db file is uploaded in github. We will be using SQLAlchemy.
 
 
-
-
-## 3.1.0 Third Segment: Plug It In: 
-## 4.1.0 Fourth Segment: Put it all together 
-              ![image](https://user-images.githubusercontent.com/75267605/118049451-c3925b80-b34b-11eb-851c-253ed4b1b96b.png)
