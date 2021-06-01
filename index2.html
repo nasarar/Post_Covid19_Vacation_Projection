@@ -35,13 +35,30 @@
       </div>
       <div class="col-md-3">
         Departure date selector
+        <form action="/action_page.php">
+          <label for="Departure"></label>
+          <input type="date" id="Departure" name="Departure">
+          <input type="submit" value="Submit">
+        </form>
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-3" style= "color: rgb(2, 15, 15); background-color:rgb(150, 208, 223)">
             <h5>Destination</h5>
             <!-- <select id="selDataset"></select> -->
             <select id="selDataset" onchange="optionChanged(this.value)"></select>
+      </div>
+      <div class="col-md-6">
+        Time to herd immunity goes here
+      </div>
+      <div class="col-md-3">
+        Return date selector
+        <form action="/action_page.php">
+          <label for="Return"></label>
+          <input type="date" id="Destination" name="Return">
+          <input type="submit" value="Submit">
+        </form>
       </div>
     </div>
     <div class="row">
