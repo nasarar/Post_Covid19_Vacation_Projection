@@ -1,12 +1,12 @@
-# Post_COVID-19_Vacation_Projection 
+# Post COVID-19 Vacation Projection 
 
 ## Selected topic
 
-•	Help travellers plan their next vacation by determining when countries will reach herd immunity based on their current vaccination rate. 
+-	Help travellers plan their next vacation by determining when countries will reach herd immunity based on their current vaccination rate. 
 
-## Reason they selected the topic: 
+## Reason we selected the topic: 
 
-•	COVID-19 has impacted many people around the world and many people are eager to travel. A major barrier to travelling right now is safety. Based on the current vaccination rates in each country we are going to determine when each country will reach herd immunity. Herd immunity is reached when approximately 70% of the population is fully vaccinated. 
+-	COVID-19 has impacted many people around the world and many people are eager to travel. A major barrier to travelling right now is safety. Based on the current vaccination rates in each country we are going to determine when each country will reach herd immunity. Herd immunity is reached when approximately 70% of the population is fully vaccinated. 
 
 ## Description of the source of data: 
 
@@ -15,62 +15,46 @@
 
 Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021). https://doi.org/10.1038/s41562-021-01122-8
 
-## Questions they hope to answer with the data
+## Defining the problem we plan to solve.
+-	When will countries reach herd immunity for safe travelling? 
 
-## 1.1.0 Sketch It Out: Define Problem we plan to solve 
-•	When will countries reach herd immunity for safe travelling? 
+## Project: Interactive website for Post COVID-19 Vacation Planner
 
-### 1.1.0 Project: Interactive website for Post covid19 Vacation Planner
+-	Using JavaScript and HTML for front-end development, as well as Leaflet library and other tools to create visual representation of our data and results.
 
-•	Using Leaflet, mapping, and other tools to create visual representation of the results. e.g. Matplot lib to create bar charts. 
+-	Users will be able to input information (e.g. Country they choose to travel to)
 
-•	Users will be able to input information
+- 	Once the user has entered the departure and destination country, the website will generate when herd immunity will be reached in those countries in accordance with our machine learning model. 
 
-### 1.2.0 Key Queries for Planner 
-#### 1.2.1 Safe Vacation country identifier: 
+-	The website will also generate a list of flights based on the departure/return date.
 
--	Safe vacation country identifier would be a country that has reached herd immunity. 
+-	Users will be notified of travel advisories and whether it is safe to travel to that country. 
 
-#### 1.2.2 Hot spots identifier around the world
+-	The user will be able to view further details of how herd immunity was calculate through a graph that reflects COVID-19 vaccination data (percentage of individuals that are fully vaccinated)
 
--	To test our model: first we will focus on US, Isreal and UK, the countries that are doing good with vaccinating their population. 
--	
-#### 1.2.3 Status update for top 10 high frequency frequently visited vacation spots
+-	Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7 
 
-###### Link : https://caen-keepexploring.canada.travel/things-to-do/10-surprising-places-ontario
+## Machine Learning Model 
+ 
 
-##### 1.2.4 Full vaccinated population status: 
 
-We will be using the website mentioned (https://ourworldindata.org/covid-vaccinations) 
+-	During the initial investigation of the dataset, the interval between date entries are not consistent, some are updated daily and some are updated less frequently; this resulted in plenty of missing value. To mitigate the problem that would fit best the Arima model, the empty rows are filled using the pivot and melt method. With this method, all the countries would have the same number of entries starting at the original point
+of December 19th, 2020. In addition, there are extra inputs on the location that arer aggregations of a number of countries. For example, 'world' is added to aggregate the world data. Therefore these entries are dropped.
 
-##### 1.2.5 Top 100 hotels, airbnb with 4* and 5* reviews for upkeeping covid safety protocols.
+-	Initial features for the model include:
+	- location
+	- date
+	- people_vaccinated
+	- people_fully_vaccinated
+	- population
+	- population_density
+	- gdp_per_capita
 
-##### 1.2.6 Direct flights availability from one destination to another. (Find an API- Goodluck)
-###### https://aviationstack.com/quickstart
-        api = “48f8feb6ff5fae068b1172d1c5605418”
+- The model of choice is the Autoregressive Integrated Moving Average (ARIMA) model due to the time series nature of the data and the problem. However, the model has its limitations especially for long term forecasting. Since the model puts more weight on its most recent past data, there will be a time that the model will be forecasting based off of its own forecast thus creating a higher margin of error.
 
-###### Sample Model: US, Isreal, UK 
+## Database: 
+SQLite
+- Script.py is uploaded in the github. It is a script for the database tables using sqllite. 
+- Covid19_projection_db file is uploaded in github. We will be using SQLAlchemy.
 
-###### Data Storage: Postgres
-
-##### ML Model: 
-Time Series Regression Model
--	We will be using regression model for time series data to predict when 70% of the population will be fully vaccinated, hence achieving herd immunity. 
--	We will be able to answer this question and predict a future response based on past trends and observational data, given that vaccination is a continuous variable 
-##### Database: 
-Postgres, SQL and Python 
-
-##### 2.1.0 Second Segment: Build the Pieces: Train your model and build out the database you will use for your final presentation.
-
-##### 2.1.1 Data Gathering 
-#####  2.1.2 Data pre-processing- Amandah
-######  Python- Clean, prepare, explore
-###### Libraries – Python and Javascript 
-###### Tableau, Leaflet, Mapping– To visualize – Maneet and Zaineb 
-#####2.1.3 Researching the model that will be best for the type of data- Ryan
-#####2.1.4 Training and testing the model- Everyone (Testing the 3 countries only first)
-##### 2.1.5 Evaluation- Everyone (Testing the 3 countries only) 
-
-##### 3.1.0 Third Segment: Plug It In: 
-##### 4.1.0 Fourth Segment: Put it all together
 
