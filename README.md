@@ -15,8 +15,6 @@ The model will also be fine-tuned for NGOs to know which countries will need hel
 NGO's directed by WHO/UN can then send a team with vaccinations and mobile medical unit to vaccinate countries/state who will be ready for such assistance.
 
 
-![image](https://user-images.githubusercontent.com/75267605/120540250-7a678180-c3b6-11eb-8a98-49e28f3af21c.png)
-
 
 
 ## Our Data 
