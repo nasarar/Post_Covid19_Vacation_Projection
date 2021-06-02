@@ -18,6 +18,7 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 ## Defining the problem we plan to solve.
 -	When will countries reach herd immunity for safe travelling? 
 
+<<<<<<< HEAD
 ## Project: Interactive website for Post COVID-19 Vacation Planner
 
 -	Using JavaScript and HTML for front-end development, as well as Leaflet library and other tools to create visual representation of our data and results.
@@ -25,6 +26,26 @@ Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 
 -	Users will be able to input information (e.g. Country they choose to travel to)
 
 - 	Once the user has entered the departure and destination country, the website will generate when herd immunity will be reached in those countries in accordance with our machine learning model. 
+=======
+## Defining the problem we plan to solve
+•	When will countries reach herd immunity for safe travelling? 
+
+## Project: Interactive website for Post COVID-19 Vacation Planner
+
+•	Using JavaScript and HTML for front-end development, as well as Leaflet library and other tools to create visual representation of our data and results.
+
+•	Users will be able to input information (e.g. Country they choose to travel to)
+
+• 	Once the user has entered the departure or destination countries, the website will generate when herd immunity will be reached in those countries in 	accordance with our machine learning model. 
+
+•	The website will also generate a list of flights based on the departure/return date.
+
+•	Users will be notified of travel advisories and whether it is safe to travel to that country. 
+
+•	Website will include graphs that reflect COVID-19 vaccination data (percentage of individuals that are fully vaccinated)
+
+•	Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7 
+>>>>>>> 1a7a2dfd2884073352aa90f1bfed039f6c508298
 
 -	The website will also generate a list of flights based on the departure/return date.
 
