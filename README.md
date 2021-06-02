@@ -1,14 +1,19 @@
+
+
+
 # Post COVID-19 Vacation Planner 
 
 Your gateway to safe Travel
 
 ## Purpose 
 
+
+
 The project aims to identify and forecast countries that will reach herd immunity by inducing the Arima model on the updated covid fully vaccinated data from our world. The model will evaluate and forecast the future data based on the past and present vaccination rate.
 
 The herd immunity is reached when 70% of the population are fully vaccinated with both the doses.
 
-The people planning to travel in the near future can visit the website ............. and check for a future date for travel to a particular destination, and the model will help them to know countries are reaching herd immunity and will mark as safe for travel.
+The people planning to travel in the near future can visit the website ............. and check for a future date for travel to a particular destination, and the model will help them to know the countries that will reach herd immunity and will mark it as safe for travel.
 
 The model will also be fine-tuned for NGOs to know which countries will need help in reaching the herd immunity by providing the details of the earliest date and year by which a particular country can be marked safe for travel. 
 
@@ -18,9 +23,17 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 
 
 ## Our Data 
-
+- Data is being used from Our World in Data for all countries but firstly to test our model, we will be using 3 countries. 
+- Website: https://ourworldindata.org/covid-vaccinations
+-
 
 ## Model
+
+### Block Diagram of Arima Model 
+
+![Block-diagram-of-methodology-ARIMA-model](https://user-images.githubusercontent.com/75267605/120561948-7ac24580-c3d3-11eb-82db-158ac0dc779b.png)
+
+
 ## Examples
 ## Database
 ## Visualisations
