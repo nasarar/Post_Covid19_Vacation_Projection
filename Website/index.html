@@ -5,118 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Post COVID-19 Vacation Planner</title>
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-  crossorigin=""/>
+  <title>COVID-19 Vaccination Data</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <!-- d3 JavaScript -->
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <!-- <script src="static/js/charts.js"></script> --> 
-  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link rel="stylesheet" href="style.css (used for immaging) ">
 </head>
 
 <body>
-
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center"
-        style="background-image: url('https://i.pinimg.com/originals/e4/89/bc/e489bc0fcaf8da2f31374065b75a42be.jpg');
-        background-size: cover; background-position: center">
-        <h1>Post COVID-19 Vacation Planner</h1>
+      <div class="col-md-12 jumbotron text-center">
+        <h1>COVID-19 Vaccination Data</h1>
         <p> 
           <b>Your gateway to safe travel </b>
         </p>
       </div>
     </div>
     <div class="row">
-      <h2>Use the interactive drop down menus below to plan your vacation</h2>
-      COVID-19 has impacted many people around the world and many people are eager to travel. A major barrier to travelling right now is safety. Based on the current vaccination rates in each country we are going to determine when each country will reach herd immunity. 
-        Herd immunity is reached when approximately 70% of the population is fully vaccinated.</div>
+        The model of choice is the Autoregressive Integrated Moving Average (ARIMA) model due to the time series nature of the data and the problem. However, the model has its limitations especially for long term forecasting. Since the model puts more weight on its most recent past data, there will be a time that the model will be forecasting based off of its own forecast thus creating a higher margin of error.<br>
+    </div>
+    <a href="index2.html">Post COVID-19 Vacation Planner</a>
     <div class="row">
-        <div class="col-md-3" style= "color: rgb(2, 15, 15); background-color:rgb(150, 208, 223)">
-          <h5>Departure</h5>
-          <!-- <select id="selDataset"></select> --> 
-          <select id="departures" onchange="departureChanged(this.value)"></select>
-      </div>
-      <div class="col-md-6">
-        Time to herd immunity goes here
-      </div>
-      <div class="col-md-3">
-        Departure date selector
-        <form action="/action_page.php">
-          <label for="Departure"></label>
-          <input type="date" id="Departure" name="Departure">
-          <input type="submit" value="Submit">
-        </form>
+      <div class="col-md-12">References<br>
+        Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021). https://doi.org/10.1038/s41562-021-01122-8<br>
       </div>
     </div>
+</div>
 
-    <div class="row">
-      <div class="col-md-3" style= "color: rgb(2, 15, 15); background-color:rgb(150, 208, 223)">
-            <h5>Destination</h5>
-            <!-- <select id="selDataset"></select> -->
-            <select id="destinations" onchange="destinationChanged(this.value)"></select>
-      </div>
-      <div class="col-md-6">
-        Time to herd immunity goes here
-      </div>
-      <div class="col-md-3">
-        Return date selector
-        <form action="/action_page.php">
-          <label for="Return"></label>
-          <input type="date" id="Destination" name="Return">
-          <input type="submit" value="Submit">
-        </form>
-      </div>
-    </div>
-    
-    <!-- This needs to be moved and resized-->
-    <div id="mapid"></div>
 
-    <div class="row">
-      <div class="col-md-3">
-      <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">List of Flights</h3>
-        </div>
-      </div> 
-    </div>
-
-      </div> 
-    </div>
-
-    
-  </div>
-
-  
-  <!-- Leaflet Javascript-->
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-  crossorigin=""></script>
-   <!-- API key -->
-   <script type="text/javascript" src="static/js/config.js"></script>
-  <script src="static/js/map.js"></script>
-      <a href="index.html">COVID-19 Vaccination Data</a>
-      <div class="row">
-        <div class="col-md-12">References<br>
-          Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021). https://doi.org/10.1038/s41562-021-01122-8<br>
-        </div>
-        </div>
-      </div>
-    </div> 
-
-  <script>
-    init_map();
-    init_dropdowns();
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
 
 </body>
 
 </html>
-
-
-</html>
-
