@@ -22,19 +22,41 @@
     </div>
     <div class="row">
         The model of choice is the Autoregressive Integrated Moving Average (ARIMA) model due to the time series nature of the data and the problem. However, the model has its limitations especially for long term forecasting. Since the model puts more weight on its most recent past data, there will be a time that the model will be forecasting based off of its own forecast thus creating a higher margin of error.<br>
+      <br> </br>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3" style= "color: rgb(2, 15, 15)">
+      <h5>Country</h5>
+      <!-- <select id="selDataset"></select> -->
+      <select id="selDataset" onchange="optionChanged(this.value)"></select>
+      <br> </br>
     </div>
+  </div>
+
     <a href="index2.html">Post COVID-19 Vacation Planner</a>
+
     <div class="row">
-      <div class="col-md-12">References<br>
-        Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021). https://doi.org/10.1038/s41562-021-01122-8<br>
+      <div class="col-md-12" style= "color: rgb(238, 25, 10">
+        <br> </br>
+        <h5>Disclaimer: The date herd immunity is reached is an estimate based on the current vaccination rate for the country. There are a number of factors that have not been taken into account in our model such as vaccine supply, vaccine hesitancy and emergence of resistant variants that can impact when herd immunity is reached. The accuracy of our model depends on countries providing regular updates with regards to vaccinations. If a country fails to provide regular updates a date herd immunity is reached may not be calculated </h5>
+        <br> </br>
       </div>
     </div>
-</div>
 
+    <div class="row">
+        <div class="col-md-12">References<br>
+          1. Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021). https://doi.org/10.1038/s41562-021-01122-8<br>
+          2. World Health Organization. Coronavirus disease (COVID-19): Herd immunity, lockdowns and COVID-19. World Health Organization. https://www.who.int/news-room/q-a-detail/herd-immunity-lockdowns-and-covid-19.<br>
+          3. D’Souza, Gypsyamber and Dowdy, David. What is herd immunity and how can we achieve it with COVID-19. Johns Hopkins Bloomberg School of Public Health. https://www.jhsph.edu/covid-19/articles/achieving-herd-immunity-with-covid19.html.<br>
+        </div>
+    </div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="charts.js"></script>
+  <script src="static/js/page2.js"></script>
+
 
 </body>
 
