@@ -24,6 +24,15 @@
         The model of choice is the Autoregressive Integrated Moving Average (ARIMA) model due to the time series nature of the data and the problem. However, the model has its limitations especially for long term forecasting. Since the model puts more weight on its most recent past data, there will be a time that the model will be forecasting based off of its own forecast thus creating a higher margin of error.<br>
       <br> </br>
   </div>
+  
+  <div class="row">
+    <div class="col-md-3" style= "color: rgb(2, 15, 15)">
+      <h5>Country</h5>
+      <!-- <select id="selDataset"></select> -->
+      <select id="selDataset" onchange="optionChanged(this.value)"></select>
+      <br> </br>
+    </div>
+  </div>
 
     <a href="index2.html">Post COVID-19 Vacation Planner</a>
 
@@ -46,7 +55,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="charts.js"></script>
+  <script src="static/js/page2.js"></script>
 
 </body>
 
