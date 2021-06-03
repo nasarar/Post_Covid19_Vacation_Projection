@@ -6,15 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Post COVID-19 Vacation Planner</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css (used for immaging) ">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <!-- d3 JavaScript -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- <script src="static/js/charts.js"></script> --> 
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
 </head>
 
 <body>
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
+      <div class="col-md-12 jumbotron text-center"
+        style="background-image: url('https://i.pinimg.com/originals/e4/89/bc/e489bc0fcaf8da2f31374065b75a42be.jpg');
+        background-size: cover; background-position: center">
         <h1>Post COVID-19 Vacation Planner</h1>
         <p> 
           <b>Your gateway to safe travel </b>
@@ -33,7 +45,7 @@
         <div class="col-md-3" style= "color: rgb(2, 15, 15); background-color:rgb(150, 208, 223)">
           <h5>Departure</h5>
           <!-- <select id="selDataset"></select> --> 
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <select id="departures" onchange="departureChanged(this.value)"></select>
         </div>
         <div class="col-md-6">
           Time to herd immunity goes here
@@ -50,9 +62,9 @@
 
     <div class="row">
       <div class="col-md-3" style= "color: rgb(2, 15, 15); background-color:rgb(150, 208, 223)">
-        <h5>Destination</h5>
-        <!-- <select id="selDataset"></select> -->
-        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            <h5>Destination</h5>
+            <!-- <select id="selDataset"></select> -->
+            <select id="destinations" onchange="destinationChanged(this.value)"></select>
       </div>
       <div class="col-md-6">
         Time to herd immunity goes here
@@ -66,6 +78,9 @@
         </form>
       </div>
     </div>
+    
+    <!-- This needs to be moved and resized-->
+    <div id="mapid"></div>
 
     <div class="row">
       <div class="col-md-3">
@@ -76,6 +91,14 @@
       </div>
       </div>
     </div>
+
+  <!-- Leaflet Javascript-->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+   <!-- API key -->
+   <script type="text/javascript" src="static/js/config.js"></script>
+  <script src="static/js/map.js"></script>
 
     <a href="index.html">COVID-19 Vaccination Data</a>
     
@@ -95,11 +118,10 @@
         </div>
     </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="charts.js"></script>
+  <script>
+    init_map();
+    init_dropdowns();
+  </script>
 
 </body>
 </html>
-
-
