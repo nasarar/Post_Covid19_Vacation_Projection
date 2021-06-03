@@ -77,13 +77,7 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 
 <img width="970" alt="Screen Shot 2021-06-02 at 11 26 22 PM" src="https://user-images.githubusercontent.com/75267605/120582402-6776a080-c3fa-11eb-9705-40209b4c4164.png">
 
-The optimal value of differencing was done with d=2, we used Augmented Dickey–Fuller (ADF) test.
-
-
-
-<img width="942" alt="Screen Shot 2021-06-02 at 11 26 04 PM" src="https://user-images.githubusercontent.com/75267605/120582390-62b1ec80-c3fa-11eb-943e-b75f2ee9865c.png">
-
-
+#### The optimal value of differencing was done with d=2, we used Augmented Dickey–Fuller (ADF) test.
 
 <img width="823" alt="Screen Shot 2021-06-02 at 11 26 53 PM" src="https://user-images.githubusercontent.com/75267605/120582416-6b0a2780-c3fa-11eb-9cad-e04537caaa5d.png">
 
@@ -92,59 +86,33 @@ The optimal value of differencing was done with d=2, we used Augmented Dickey–
 
 <img width="837" alt="Screen Shot 2021-06-02 at 11 28 36 PM" src="https://user-images.githubusercontent.com/75267605/120582508-8ffe9a80-c3fa-11eb-92e1-aef81bad0209.png">
 
-
-
-
-
-
-
-
-### Plots for USA
-### plots for ISR 
 - 
 ## Database
+SQLite
+- Script.py is uploaded in the github. It is a script for the database tables using sqllite. 
+- Covid19_projection_db file is uploaded in github. We will be using SQLAlchemy.
 ## Visualisations
 ## Website 
-## Demonstration 
 
-## Selected topic
+Using JavaScript and HTML for front-end development, as well as Leaflet library and other tools to create visual representation of our data and results.
 
--	Help travellers plan their next vacation by determining when countries will reach herd immunity based on their current vaccination rate. 
+•	Users will be able to input information (e.g. Country they choose to travel to)
 
-## Reason we selected the topic: 
+• 	Once the user has entered the departure or destination countries, the website will generate when herd immunity will be reached in those countries in 	accordance with our machine learning model. 
 
--	COVID-19 has impacted many people around the world and many people are eager to travel. A major barrier to travelling right now is safety. Based on the current vaccination rates in each country we are going to determine when each country will reach herd immunity. Herd immunity is reached when approximately 70% of the population is fully vaccinated. 
+•	The website will also generate a list of flights based on the departure/return date.
 
-## Description of the source of data: 
+•	Users will be notified of travel advisories and whether it is safe to travel to that country. 
 
-- Data is being used from Our World in Data for all countries but firstly to test our model, we will be using 3 countries. 
-- Website: https://ourworldindata.org/covid-vaccinations
+•	Website will include graphs that reflect COVID-19 vaccination data (percentage of individuals that are fully vaccinated)
 
-Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021). https://doi.org/10.1038/s41562-021-01122-8
+•	Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7 
 
-## Defining the problem we plan to solve.
--	When will countries reach herd immunity for safe travelling? 
-
-## Project: Interactive website for Post COVID-19 Vacation Planner
-
--	Using JavaScript and HTML for front-end development, as well as Leaflet library and other tools to create visual representation of our data and results.
-
--	Users will be able to input information (e.g. Country they choose to travel to)
-
-- 	Once the user has entered the departure and destination country, the website will generate when herd immunity will be reached in those countries in accordance with our machine learning model. 
 
 -	The website will also generate a list of flights based on the departure/return date.
 
 -	Users will be notified of travel advisories and whether it is safe to travel to that country. 
 
 -	The user will be able to view further details of how herd immunity was calculate through a graph that reflects COVID-19 vaccination data (percentage of individuals that are fully vaccinated)
-
--	Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7 
-
-## Machine Learning Model 
- 
-
-## Database: 
-SQLite
-
+## Demonstration 
 
