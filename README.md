@@ -34,7 +34,62 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 ![Block-diagram-of-methodology-ARIMA-model](https://user-images.githubusercontent.com/75267605/120561948-7ac24580-c3d3-11eb-82db-158ac0dc779b.png)
 
 
+-	During the initial investigation of the dataset, it was evaluated that the interval between date entries are not consistent, as some are updated daily and some are updated less frequently; this resulted in plenty of missing value. 
+-	To mitigate the problem that would fit best the Arima model, the empty rows are filled using the pivot and melt method. With this method, all the countries would have the same number of entries starting at the original point of December 19th, 2020. 
+-	In addition, there are extra inputs on the location that are aggregations of a number of countries. For example, 'world' is added to aggregate the world data. Therefore these entries are dropped.
+
+-	Initial features for the model include:
+	- location
+	- date
+	- people_vaccinated
+	- people_fully_vaccinated
+	- population
+	- population_density
+	- gdp_per_capita
+
+- The model of choice is the Autoregressive Integrated Moving Average (ARIMA) model due to the time series nature of the data and the problem. However, the model has its limitations especially for long term forecasting. Since the model puts more weight on its most recent past data, there will be a time that the model will be forecasting based off of its own forecast thus creating a higher margin of error.
+- The Arima Model we have worked out for the data works best with p,d,q value of 4,2,4. 
+- Checked stationarity: Time series has to be independent of trend or seasonality component before we can use ARIMA to forecast.
+- Difference: The time is made stationarized through differencing. We were able to utilize two differening to make the series stationary.
+- Filter out a validation sample: This will be used to validate how accurate our model is. We Used train test validation split to achieve this.
+- Select AR and MA terms: Use the ACF and PACF to decide whether to include an AR term(s), MA term(s), or both.We settled on P & Q to be at 4 to get the best results 
+- Build the model: Build the model and set the number of periods to forecast to N (12*30 days).
+- Validate the model: Compare the predicted values to the actuals in the validation sample.
+
+
 ## Examples
+
+- Three countries GBR,USA and ISR were identfied to generate the plots as examples for documentation.
+- 
+### Plots for GBR
+
+#### Orginal Series and ACF
+
+<img width="960" alt="Screen Shot 2021-06-02 at 11 25 26 PM" src="https://user-images.githubusercontent.com/75267605/120582374-5e85cf00-c3fa-11eb-961e-675f69598261.png">
+
+#### 1st Order differencing and ACF
+
+
+<img width="942" alt="Screen Shot 2021-06-02 at 11 26 04 PM" src="https://user-images.githubusercontent.com/75267605/120582390-62b1ec80-c3fa-11eb-943e-b75f2ee9865c.png">
+
+#### 2nd Order differening and ACF
+
+
+<img width="970" alt="Screen Shot 2021-06-02 at 11 26 22 PM" src="https://user-images.githubusercontent.com/75267605/120582402-6776a080-c3fa-11eb-9705-40209b4c4164.png">
+
+
+<img width="823" alt="Screen Shot 2021-06-02 at 11 26 53 PM" src="https://user-images.githubusercontent.com/75267605/120582416-6b0a2780-c3fa-11eb-9cad-e04537caaa5d.png">
+
+
+<img width="858" alt="Screen Shot 2021-06-02 at 11 28 25 PM" src="https://user-images.githubusercontent.com/75267605/120582443-76f5e980-c3fa-11eb-900c-47e1107fbb56.png">
+
+<img width="837" alt="Screen Shot 2021-06-02 at 11 28 36 PM" src="https://user-images.githubusercontent.com/75267605/120582508-8ffe9a80-c3fa-11eb-92e1-aef81bad0209.png">
+
+
+
+### Plots for USA
+### plots for ISR 
+- 
 ## Database
 ## Visualisations
 ## Website 
