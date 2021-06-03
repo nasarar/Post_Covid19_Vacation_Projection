@@ -1,35 +1,23 @@
+# Import required libraries
 import sqlite3
+import pandas as pd
+  
+# Connect to SQLite database
+conn = sqlite3.connect('forecast_all.db')
+c= conn.cursor()
 
-## define connection and cursor 
+## Execute a query 
+c.execute('''CREATE TABLE forecast_herdimmunity (country TEXT, date TEXT, prediction INT)''')
 
-connection= sqlite3.connect("covid19_vaccination_plan.db")
+# Load CSV data into Pandas DataFrame
+forecast_herdimmunity = pd.read_csv('Resources/---.csv')
 
-##creating cursor to run the command 
-
-c = connection.cursor()
-
-# Create countries table 
-
-command1= ("""CREATE TABLE IF NOT EXISTS
-forecast_countries_fullyVac (location INTEGER PRIMARY KEY, fullVacNew INTEGER)""")
-
-c.execute(command1)
-
-command2= ("""CREATE TABLE IF NOT EXISTS
-forecast_countries_vacNew (FOREIGN KEY(location) REFERENCES forecast_countries_fullyVac(location), vacNew INTEGER)""")
-
-c.execute(command2)
-
-command3= ("""CREATE TABLE IF NOT EXISTS
-forecast_All (FOREIGN KEY(location) REFERENCES forecast_countries_fullyVac(location), vacNew INTEGER, fullVacNew INTEGER)""")
-
-c.execute(command3)
-
-command4= ("""CREATE TABLE IF NOT EXISTS
-herd_immunity_all(FOREIGN KEY(location) REFERENCES forecast_countries_fullyVac(location), herd_immunity INTEGER)""")
-
-c.execute(command4)
+# Write the data to a sqlite table
+forecast_herdimmunity.to_sql('forecast_herdimmunity', conn, if_exists='append', index=False)
+  
+c.execute('''SELECT * FROM forecast_herdimmunity''').fetchall()
 
 c.close()
+
 
 
