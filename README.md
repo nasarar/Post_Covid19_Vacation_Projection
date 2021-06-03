@@ -77,6 +77,13 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 
 <img width="970" alt="Screen Shot 2021-06-02 at 11 26 22 PM" src="https://user-images.githubusercontent.com/75267605/120582402-6776a080-c3fa-11eb-9705-40209b4c4164.png">
 
+The optimal value of differencing was done with d=2, we used Augmented Dickey–Fuller (ADF) test.
+
+
+
+<img width="942" alt="Screen Shot 2021-06-02 at 11 26 04 PM" src="https://user-images.githubusercontent.com/75267605/120582390-62b1ec80-c3fa-11eb-943e-b75f2ee9865c.png">
+
+
 
 <img width="823" alt="Screen Shot 2021-06-02 at 11 26 53 PM" src="https://user-images.githubusercontent.com/75267605/120582416-6b0a2780-c3fa-11eb-9cad-e04537caaa5d.png">
 
@@ -84,6 +91,11 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 <img width="858" alt="Screen Shot 2021-06-02 at 11 28 25 PM" src="https://user-images.githubusercontent.com/75267605/120582443-76f5e980-c3fa-11eb-900c-47e1107fbb56.png">
 
 <img width="837" alt="Screen Shot 2021-06-02 at 11 28 36 PM" src="https://user-images.githubusercontent.com/75267605/120582508-8ffe9a80-c3fa-11eb-92e1-aef81bad0209.png">
+
+
+
+
+
 
 
 
