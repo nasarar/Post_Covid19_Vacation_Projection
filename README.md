@@ -89,8 +89,8 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 SQLite
 - Script.py is uploaded in the github. It is a script for the database tables using sqllite. 
 - Covid19_projection_db file is uploaded in github. We will be using SQLAlchemy.
-## Visualisations
-## Website 
+
+## Website & Visualizations
 
 Using JavaScript and HTML for front-end development, as well as Leaflet library and other tools to create visual representation of our data and results.
 
@@ -98,14 +98,11 @@ Using JavaScript and HTML for front-end development, as well as Leaflet library 
 
 • 	Once the user has entered the departure or destination countries, the website will generate when herd immunity will be reached in those countries in 	accordance with our machine learning model. 
 
-•	The website will also generate a list of flights based on the departure/return date.
+•	An interactive map will include popup markers of airports in the chosen countries based on the aviationstack API (https://aviationstack.com/) 
 
-•	Users will be notified of travel advisories and whether it is safe to travel to that country. 
 
-•	Website will include graphs that reflect COVID-19 vaccination data (percentage of individuals that are fully vaccinated)
 
 •	Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7 
-
 
 -	The website will also generate a list of flights based on the departure/return date.
 
