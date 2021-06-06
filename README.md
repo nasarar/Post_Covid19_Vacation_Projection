@@ -101,13 +101,12 @@ Using JavaScript and HTML for front-end development, as well as Leaflet library 
 •	An interactive map will include popup markers of airports in the chosen countries based on the aviationstack API (https://aviationstack.com/) 
 
 
-
-•	Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7 
-
 -	The website will also generate a list of flights based on the departure/return date.
 
 -	Users will be notified of travel advisories and whether it is safe to travel to that country. 
 
 -	The user will be able to view further details of how herd immunity was calculate through a graph that reflects COVID-19 vaccination data (percentage of individuals that are fully vaccinated)
+-	
+-	Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7 
 ## Demonstration 
 
