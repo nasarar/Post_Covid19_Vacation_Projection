@@ -3,6 +3,10 @@
 
 Your gateway to safe Travel
 
+## Presentation 
+### The presentation for the project can be accessed [here](https://docs.google.com/presentation/d/10SREyI6aJZHYDQQToGYDDiN4IGymO-KeN4DXxd2qc8g/edit#slide=id.gdd6f86eaab_0_138)
+
+
 ## Purpose 
 
 
