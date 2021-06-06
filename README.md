@@ -94,17 +94,15 @@ SQLite
 
 Using JavaScript and HTML for front-end development, as well as Leaflet library and other tools to create visual representation of our data and results.
 
-•	Users will be able to input information (e.g. Country they choose to travel to)
+•	Users will be able to select a country from a dropdown list (e.g. departure or destination country)
 
-• 	Once the user has entered the departure or destination countries, the website will generate when herd immunity will be reached in those countries in 	accordance with our machine learning model. 
+• 	Once the user has selected the departure or destination country, the website will generate when herd immunity will be reached in that country in 	accordance with our machine learning model. 
 
 •	An interactive map will include popup markers of airports in the chosen countries based on the aviationstack API (https://aviationstack.com/) 
 
 <img src = "https://github.com/nasarar/Post_Covid19_Vacation_Projection/blob/896fbae431b3ae9ea1bd6b90e01976d0b6daeb92/map.png">
 
 -	The website will also generate a list of flights based on the departure/return date.
-
--	Users will be notified of travel advisories and whether it is safe to travel to that country. 
 
 -	The user will be able to view further details of how herd immunity was calculate through a graph that reflects COVID-19 vaccination data (percentage of individuals that are fully vaccinated)
 -	
