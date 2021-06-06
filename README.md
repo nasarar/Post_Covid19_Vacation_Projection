@@ -100,7 +100,7 @@ Using JavaScript and HTML for front-end development, as well as Leaflet library 
 
 •	An interactive map will include popup markers of airports in the chosen countries based on the aviationstack API (https://aviationstack.com/) 
 
-![Map](map.png)
+![Map](Amandah/map.png)
 
 -	The website will also generate a list of flights based on the departure/return date.
 
