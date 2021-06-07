@@ -106,7 +106,9 @@ Using JavaScript and HTML for front-end development, as well as Leaflet library 
 
 <img src = "https://github.com/nasarar/Post_Covid19_Vacation_Projection/blob/955bc001563294e8d3cae6aaecf5981e2250d10d/map.png">
 
--	The website will also generate a list of flights based on the departure/return date.
+-	The website will also generate a list of nearby hotels (within 5 km) of the user's choice of location. 
+
+<img src = "https://github.com/nasarar/Post_Covid19_Vacation_Projection/blob/955bc001563294e8d3cae6aaecf5981e2250d10d/hotels.png">
 
 -	The user will be able to view further details of how herd immunity was calculate through a graph that reflects COVID-19 vaccination data (percentage of individuals that are fully vaccinated)
 
