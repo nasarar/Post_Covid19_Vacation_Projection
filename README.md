@@ -90,9 +90,10 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 
 - 
 ## Database
-SQLite
-- Script.py is uploaded in the github. It is a script for the database tables using sqllite. 
-- Covid19_projection_db file is uploaded in github. We will be using SQLAlchemy.
+# SQLite
+- Script.py.ipynb is the script used to create the database. Ran the database in Jupyter notebook and then convert it in json file. 
+- World_data_forecast.db file is in Resources folder and json file is in static folder. 
+- Will be using flask to connect it to the database.
 
 ## Website & Visualizations
 
