@@ -92,18 +92,36 @@ function set_popup_location(countryCode, type) {  // need to figure out how to g
   });
 }
 
+function getHerdImmunity(location){
+  d3.json('world_data_forecast_edited.json').then(data=>{
+    const immunityDeparture = data.find(x => x.location === location && x.people_fully_vaccinated >= 70);
+    console.log('hey==>>>', immunityDeparture);
+    if (immunityDeparture) document.getElementById('immunity').value = immunityDeparture.date_adjusted;
+  })
+}
+
+function getHerdImmunityDestination(location){
+  d3.json('world_data_forecast_edited.json').then(data=>{
+    const immunityDestination = data.find(x => x.location === location && x.people_fully_vaccinated >= 70);
+    console.log('hey==>>>', immunityDestination);
+    if (immunityDestination) document.getElementById('destinationImmunity').value = immunityDestination.date_adjusted;
+  })
+}
+
 function departureChanged(value) {
   set_popup_location(value, 'departure');
+  getHerdImmunity(value);
 }
 
 function destinationChanged(value) {
   set_popup_location(value, 'destination');
+  getHerdImmunityDestination(value);
 }
 
 
 
 function initMap() {
-  console.log('');
+  
 
   const input = document.getElementById('myInput');
   const autocomplete = new window.google.maps.places.Autocomplete(input);
@@ -129,48 +147,7 @@ function initMap() {
         const ulElement = document.createElement('ul');
         results.forEach(({name, formatted_address}) => {
           const liElement = document.createElement('li');
-          liElement.innerHTML = `<p><b>Hotel name:</b> ${name} ---> <b>Address:</b> ${formatted_address} </p>`;
-          ulElement.appendChild(liElement);
-        });
-        placesDiv.appendChild(ulElement);
-        
-
-      }
-    });
-
-
-  });
-
-};
-
-function initMap2() {
-  console.log('');
-
-  const input = document.getElementById('myInput');
-  const autocomplete = new window.google.maps.places.Autocomplete(input);
-  autocomplete.addListener('place_changed', () => {
-    const {geometry} = autocomplete.getPlace();
-    console.log('got hereee==>', autocomplete.getPlace());
-
-    let {lat, lng} = geometry.location;
-    lat = lat();
-    lng = lng();
-    const request = {
-      query: 'hotel',
-      type: ['lodging'],
-      radius: '5000',
-      location: new google.maps.LatLng(lat, lng)
-    }
-
-    const placesDiv = document.getElementById('places');
-    const service = new window.google.maps.places.PlacesService(placesDiv);
-    service.textSearch(request, (results, status) => {
-      if (status === window.google.maps.places.PlacesServiceStatus.OK) {
-        console.log('status==>>', status, 'res==>>', results);
-        const ulElement = document.createElement('ul');
-        results.forEach(({name, formatted_address}) => {
-          const liElement = document.createElement('li');
-          liElement.innerHTML = `<p><b>Hotel name:</b> ${name} <b>Address:</b> ${formatted_address} </p>`;
+          liElement.innerHTML = `<p><b>Hotel name:</b> ${name} --> <b>Address:</b> ${formatted_address} </p>`;
           ulElement.appendChild(liElement);
         });
         placesDiv.appendChild(ulElement);

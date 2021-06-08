@@ -11,6 +11,8 @@
   crossorigin=""/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="static/js/herd_immunity.js"></script>
 </head>
 
 <style>
@@ -27,8 +29,15 @@
         <h1>Post COVID-19 Vacation Planner</h1>
         <p> 
           <b>Your gateway to safe travel </b>
+          
         </p>
       </div>
+    </div>
+
+    <div class = "topnav">
+      <a class= "active">
+      <a href="index2.html">Post COVID-19 Vacation Planner</a>
+      <a href="index.html">COVID-19 Vaccination Data</a>
     </div>
     <div class="row">
       <h2>Use the interactive drop down menus below to plan your vacation</h2>
@@ -48,16 +57,9 @@
           <!-- <select id="selDataset"></select> --> 
             
       </div>
-      <div class="col-md-6">
-        Time to herd immunity goes here
+      <div class="col-md-6" >
+        <p>Herd immunity will be reached on: <input type="text" id="immunity" name="immunity" readonly="readonly" />
       </div>
-      <!-- <div class="col-md-3">
-        Departure date selector
-          <label for="Departure"></label>
-          <input type="date" id="Departure" name="Departure">
-          <input type="submit" value="Submit">
-        </form>
-      </div> -->
     </div>
 
     <div class="row">
@@ -70,7 +72,7 @@
             <!-- <select id="selDataset"></select> -->
       </div>
       <div class="col-md-6">
-        Time to herd immunity goes here
+        <p>Herd immunity will be reached on: <input type="text" id="destinationImmunity" name="destinationImmunity" readonly="readonly" />
       </div>
       <!-- <div class="col-md-3">
         Return date selector
@@ -140,9 +142,9 @@
       </div>    
     </div>
 
-    <div class="col-md-12">
-      <a href="index.html">Follow <strong>COVID-19 Vaccination Data</strong> for more on </a>
-    </div>
+    <!-- <div class="col-md-12">
+      <a href="index.html">Follow <strong>COVID-19 Vaccination Data</strong></a>
+    </div> -->
       <div class="col-md-12"><strong>References<br></strong>
         1. Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021). https://doi.org/10.1038/s41562-021-01122-8<br>
         2. World Health Organization. Coronavirus disease (COVID-19): Herd immunity, lockdowns and COVID-19. World Health Organization. https://www.who.int/news-room/q-a-detail/herd-immunity-lockdowns-and-covid-19.<br>
