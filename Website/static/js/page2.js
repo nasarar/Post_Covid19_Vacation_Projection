@@ -1,24 +1,21 @@
 function init() {
-    // Grab a reference to the dropdown select element
-    var selector = d3.select("#selDataset");
-  
-    // Use the list of locations to populate the select options
-    
-    d3.json('world_data_forecast.json').then((data) => {
-      var locationNames = data.map(x=> x.location);
-      locationNames = [...new Set(locationNames)];
-      locationNames.forEach((location) => {
-        selector
-          .append("option")
-          .text(location)
-          .property("value", location);
-      });
-  
-      // Use the first location from the list to build the initial plots
-      var firstLocation = locationNames[0];
-      buildCharts(firstLocation);
+  // Grab a reference to the dropdown select element
+  var selector = d3.select("#selDataset");
+
+  // Use the list of locations to populate the select options
+    var locationNames = vaccinationData.map(x=> x.location);
+    locationNames = [...new Set(locationNames)];
+    locationNames.forEach((location) => {
+      selector
+        .append("option")
+        .text(location)
+        .property("value", location);
     });
-  }
+
+    // Use the first location from the list to build the initial plots
+    var firstLocation = locationNames[0];
+    buildCharts(firstLocation);
+}
   
   // Initialize the dashboard
   init();
@@ -29,10 +26,8 @@ function init() {
   }
 
   function buildCharts(location) {
-    // Use d3.json to load and retrieve the world_data_forecast.json file 
-    d3.json("world_data_forecast.json").then((data) => {
       // Create a variable that filters the location for the object with the desired location 
-      var resultsArray = data.filter(resultsObj => resultsObj.location == location);
+      var resultsArray = vaccinationData.filter(resultsObj => resultsObj.location == location && resultsObj.people_fully_vaccinated <71);
       // Create variables that hold the vaccinated and date.
       var date = resultsArray.map(x=> x.date_adjusted);
       var vaccinated = resultsArray.map(x=> x.people_fully_vaccinated);
