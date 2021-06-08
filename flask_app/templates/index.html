@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>COVID-19 Vaccination Data</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center"
+        style="background-image: url('http://bullandbearmcgill.com/wp-content/uploads/2020/11/max_776.jpg');
+        background-size: cover; background-position: center; color: rgb(255, 255, 255); opacity: 0.8">
+        <h1>COVID-19 Vaccination Data</h1>
+        <p>
+          <b>Your gateway to safe travel </b>
+        </p>
+      </div>
+    </div>
+    <div class = "topnav">
+      <a class= "active">
+      <a href="{{ url_for('index') }}">Post COVID-19 Vacation Planner</a>
+      <a href="{{ url_for('vaccination_data') }}">COVID-19 Vaccination Data</a>
+    </div>
+    <div class="col-md-12 row" >
+      <br> </br>
+      <p>During the initial investigation of the dataset, it was evaluated that the interval between date entries are not consistent, as some are updated daily and some are updated less frequently; this resulted in plenty of missing value.</p>
+      <p>To mitigate the problem that would fit best the Arima model, the empty rows are filled using the pivot and melt method. With this method, all the countries would have the same number of entries starting at the original point of December 19th, 2020.</p>
+      <p>In addition, there are extra inputs on the location that are aggregations of a number of countries. For example, 'world' is added to aggregate the world data. Therefore these entries are dropped.</p>
+      <p>The model of choice is the Autoregressive Integrated Moving Average (ARIMA) model due to the time series nature of the data and the problem. However, the model has its limitations especially for long term forecasting. Since the model puts more weight on its most recent past data, there will be a time that the model will be forecasting based off of its own forecast thus creating a higher margin of error.</p>
+      <br> </br>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2">
+    <div class="well" style= "background-color:rgb(150, 208, 223);">
+      <h5>Select Country</h5>
+      <!-- <select id="selDataset"></select> -->
+      <select id="selDataset" onchange="optionChanged(this.value)"></select>
+    </div>
+  </div>
+  </div>
+
+  <div class ="row">
+    <div class ="col-md-12">
+      <div id ="line"></div>
+      <p>
+        <i>Line chart displays vaccination rate, hover over the graph to see vaccination rates.</i>
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12" style= "color: rgb(238, 25, 10)">
+    <br> </br>
+    <h5>Disclaimer: The date herd immunity is reached is an estimate based on the current vaccination rate for the country. There are a number of factors that have not been taken into account in our model such as vaccine supply, vaccine hesitancy and emergence of resistant variants that can impact when herd immunity is reached. The accuracy of our model depends on countries providing regular updates with regards to vaccinations. If a country fails to provide regular updates a date herd immunity is reached may not be calculated </h5>
+    <br> </br>
+  </div>
+
+    <div class="row">
+        <div class="col-md-12">References<br>
+          1. Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021). https://doi.org/10.1038/s41562-021-01122-8<br>
+          2. World Health Organization. Coronavirus disease (COVID-19): Herd immunity, lockdowns and COVID-19. World Health Organization. https://www.who.int/news-room/q-a-detail/herd-immunity-lockdowns-and-covid-19.<br>
+          3. D’Souza, Gypsyamber and Dowdy, David. What is herd immunity and how can we achieve it with COVID-19. Johns Hopkins Bloomberg School of Public Health. https://www.jhsph.edu/covid-19/articles/achieving-herd-immunity-with-covid19.html.<br>
+        </div>
+    </div>
+  </div>
+  </div>
+
+  <script type="text/javascript"> var vaccinationData = {{ result_json | safe }} </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/page2.js"></script>
+
+</body>
+
+</html>
