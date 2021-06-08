@@ -1,0 +1,17 @@
+# #Pivot and melt method and set relative date from day-1 of tracking (December 19th, 2020)
+
+# df= pd.read_csv('https://covid.ourworldindata.org/data/owid-covid-data.csv')
+# df['date'] = pd.to_datetime(df['date']).dt.date
+# df = df.sort_values(['iso_code','date']).reset_index(drop=True)
+# #calculate relative date (even non -sequential)
+# days_delta = (df['date'] - df.groupby('iso_code')['date'].shift(1)).dt.days.fillna(1)
+# df['relative_date'] = 1 + days_delta
+# df['relative_date'] = df.groupby('iso_code')['relative_date'].cumsum() - 1
+
+
+# #create the same number of relative dates for each country (matching max available)
+# left = pd.melt(df[['iso_code','relative_date','people_vaccinated']]\
+#             .pivot(index='iso_code',columns='relative_date',values='people_vaccinated').reset_index(),
+#             id_vars=['iso_code']).sort_values(['iso_code','relative_date']).reset_index(drop=True)
+# df = left.drop('value',axis=1).merge(df, on=['iso_code','relative_date'], how='left')
+# df.tail()
