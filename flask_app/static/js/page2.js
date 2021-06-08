@@ -33,7 +33,7 @@ function init() {
     // Use d3.json to load and retrieve the world_data_forecast.json file
 
       // Create a variable that filters the location for the object with the desired location
-      var resultsArray = vaccinationData.filter(resultsObj => resultsObj.location == location);
+      var resultsArray = vaccinationData.filter(resultsObj => resultsObj.location == location && resultsObj.people_fully_vaccinated <71);
       // Create variables that hold the vaccinated and date.
       var date = resultsArray.map(x=> x.date_adjusted);
       var vaccinated = resultsArray.map(x=> x.people_fully_vaccinated);
