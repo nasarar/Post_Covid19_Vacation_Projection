@@ -91,9 +91,9 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 - 
 ## Database
 # SQLite
-- Script.py.ipynb is the script used to create the database. Ran the database in Jupyter notebook and then convert it in json file. 
-- World_data_forecast.db file is in Resources folder and json file is in static folder. 
-- Will be using flask to connect it to the database.
+- Script.py.ipynb is the script used to create the database in SQLite. Used pandas and python to query the database to create tables. Ran the jupyter notebook to test the code. 
+- World_data_forecast.csv file and the json created is in the resources folder. 
+- Used Flask to connect database to the web application.
 
 ## Website & Visualizations
 
