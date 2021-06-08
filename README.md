@@ -33,7 +33,7 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 
 ### Block Diagram of Arima Model 
 
-![Block-diagram-of-methodology-ARIMA-model](https://user-images.githubusercontent.com/75267605/120561948-7ac24580-c3d3-11eb-82db-158ac0dc779b.png)
+<img width="935" alt="Screen Shot 2021-06-08 at 12 42 05 AM" src="https://user-images.githubusercontent.com/75267605/121126045-85c30e80-c7f5-11eb-9214-e7ba7248c56c.png">
 
 
 -	During the initial investigation of the dataset, it was evaluated that the interval between date entries are not consistent, as some are updated daily and some are updated less frequently; this resulted in plenty of missing value. 
