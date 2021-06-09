@@ -1,5 +1,4 @@
-
-					# Post COVID-19 Vacation Planner 
+# Post COVID-19 Vacation Planner 
 
 Your gateway to safe Travel
 
