@@ -1,6 +1,8 @@
-# Post COVID-19 Vacation Planner 
 
-Your gateway to safe Travel
+<img width="1167" alt="Screen Shot 2021-06-08 at 11 34 40 PM" src="https://user-images.githubusercontent.com/75267605/121289415-e95f4180-c8b2-11eb-94e8-6fccbff9f3dc.png">
+
+
+
 
 ## Presentation 
 ### The presentation for the project can be accessed [here](https://docs.google.com/presentation/d/10SREyI6aJZHYDQQToGYDDiN4IGymO-KeN4DXxd2qc8g/edit#slide=id.gdd6f86eaab_0_138)
