@@ -25,12 +25,42 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 
 
 
-## Our Data 
+## Data Analysis Phase
 - Data is being used from Our World in Data for all countries but firstly to test our model, we will be using 3 countries. 
 - Website: https://ourworldindata.org/covid-vaccinations
--
+- Ourwordlin data is dependent on the data of vaccination fed in by the countries medical bodies similar to cdc of USA 
+- Some countries like Afghanistan approach in feeding data is not consistent like many more and 
+- The countries approachto vacinations differ based on the availability of vaccinations in different countries.
+- Canada approached vaccination by keeping a lag of 3-4 months bewteen two doses in order to provide minimum protection of one dose to all.
+- checked statistical validity of ourworldin data
+- checked for the nulls,verfied and deleted as required
+- checked the datatypes and removed wrong datatype values and re-transformed datatypes
+- dropped,deleted  or excluded irrelevant columns
+- visualized our data for our need 
+- binned data whereever appropriate
+- checked all the columns for unique values
+- split the data into training and testing datasets
+- created calculated conditions for our scripts for machine learning model
+- supervised and unsupervised learning, dimensionality reduction
+- rescaling data
 
-## Model
+
+
+
+## Machine Learning Model
+
+- Read cleaned data
+- Resampled the cleaned data
+- Stationarity check on resampled data 
+- Data split for Train & test 
+- Build ARIMA model and determine Hyperparameters of the model
+- Predict Data set 
+- Model Validation
+- Predict Future data 
+
+
+
+
 
 ### Block Diagram of Arima Model 
 
@@ -51,7 +81,8 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 	- gdp_per_capita
 
 - The model of choice is the Autoregressive Integrated Moving Average (ARIMA) model due to the time series nature of the data and the problem. However, the model has its limitations especially for long term forecasting. Since the model puts more weight on its most recent past data, there will be a time that the model will be forecasting based off of its own forecast thus creating a higher margin of error.
-- The Arima Model we have worked out for the data works best with p,d,q value of 4,2,4. 
+- The Arima Model we have worked out for the data works best with p,d,q value of 7,0,0. 
+- For loop is used to 
 - Checked stationarity: Time series has to be independent of trend or seasonality component before we can use ARIMA to forecast.
 - Difference: The time is made stationarized through differencing. We were able to utilize two differening to make the series stationary.
 - Filter out a validation sample: This will be used to validate how accurate our model is. We Used train test validation split to achieve this.
