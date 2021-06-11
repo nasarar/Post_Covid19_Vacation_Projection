@@ -49,27 +49,15 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 
 ## Machine Learning Model
 
-- Read cleaned data
-- Resampled the cleaned data
-- Stationarity check on resampled data 
-- Data split for Train & test 
-- Build ARIMA model and determine Hyperparameters of the model
-- Predict Data set 
-- Model Validation
-- Predict Future data 
-
-
-
-
 
 ### Block Diagram of Arima Model 
 
 <img width="935" alt="Screen Shot 2021-06-08 at 12 42 05 AM" src="https://user-images.githubusercontent.com/75267605/121126045-85c30e80-c7f5-11eb-9214-e7ba7248c56c.png">
 
 
--	During the initial investigation of the dataset, it was evaluated that the interval between date entries are not consistent, as some are updated daily and some are updated less frequently; this resulted in plenty of missing value. 
--	To mitigate the problem that would fit best the Arima model, the empty rows are filled using the pivot and melt method. With this method, all the countries would have the same number of entries starting at the original point of December 19th, 2020. 
--	In addition, there are extra inputs on the location that are aggregations of a number of countries. For example, 'world' is added to aggregate the world data. Therefore these entries are dropped.
+-During the initial investigation of the dataset, it was evaluated that the interval between date entries are not consistent, as some are updated daily and some are updated less frequently; this resulted in plenty of missing value. 
+-To mitigate the problem that would fit best the Arima model, the empty rows are filled using the pivot and melt method. With this method, all the countries would have the same number of entries starting at the original point of December 19th, 2020. 
+-In addition, there are extra inputs on the location that are aggregations of a number of countries. For example, 'world' is added to aggregate the world data. Therefore these entries are dropped.
 
 -	Initial features for the model include:
 	- location
@@ -89,6 +77,78 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 - Select AR and MA terms: Use the ACF and PACF to decide whether to include an AR term(s), MA term(s), or both.We settled on P & Q to be at 4 to get the best results 
 - Build the model: Build the model and set the number of periods to forecast to N (12*30 days).
 - Validate the model: Compare the predicted values to the actuals in the validation sample.
+
+
+- Read cleaned data
+
+<img width="831" alt="step1-read the data " src="https://user-images.githubusercontent.com/75267605/121627140-cf556880-ca44-11eb-8086-61641ffd0beb.png">
+
+
+- Resampled the cleaned data
+
+
+
+<img width="629" alt="resample1" src="https://user-images.githubusercontent.com/75267605/121627200-eb590a00-ca44-11eb-883c-cc074ea100c9.png">
+
+<img width="654" alt="reseample 2" src="https://user-images.githubusercontent.com/75267605/121627227-f6ac3580-ca44-11eb-8121-d57684996740.png">
+
+
+- Stationarity check on resampled data 
+
+
+
+<img width="730" alt="stationarity check " src="https://user-images.githubusercontent.com/75267605/121627304-17748b00-ca45-11eb-9ac5-d7380c4bdd94.png">
+
+
+- Data split for Train & test 
+
+<img width="485" alt="Train   Test " src="https://user-images.githubusercontent.com/75267605/121627451-602c4400-ca45-11eb-98e9-7e5ac90d86c6.png">
+
+
+<img width="653" alt="train   test 01" src="https://user-images.githubusercontent.com/75267605/121627473-67535200-ca45-11eb-97da-995d1ed9ebce.png">
+
+
+<img width="763" alt="train test 02" src="https://user-images.githubusercontent.com/75267605/121627484-6cb09c80-ca45-11eb-8d88-a6f2bd581898.png">
+
+
+
+- Build ARIMA model and determine Hyperparameters of the model
+
+
+<img width="578" alt="RMSE train   Test" src="https://user-images.githubusercontent.com/75267605/121627672-cb761600-ca45-11eb-9ce1-a11fed9b4fc5.png">
+
+
+<img width="560" alt="Armia model pdq value " src="https://user-images.githubusercontent.com/75267605/121627684-d29d2400-ca45-11eb-8bae-155cf03f1ef9.png">
+
+
+- Predict Data set 
+
+
+
+
+<img width="681" alt="predict data set " src="https://user-images.githubusercontent.com/75267605/121627982-64a52c80-ca46-11eb-9e89-3b7e84e50aa2.png">
+
+
+- Model Validation
+
+
+<img width="602" alt="model validation 01" src="https://user-images.githubusercontent.com/75267605/121628102-9d450600-ca46-11eb-842a-4b25fcdbe0a6.png">
+
+
+
+<img width="847" alt="model validation 02" src="https://user-images.githubusercontent.com/75267605/121628188-c49bd300-ca46-11eb-97eb-5fdb760be316.png">
+
+
+- Predict Future data 
+
+
+<img width="666" alt="predict future data " src="https://user-images.githubusercontent.com/75267605/121628344-03ca2400-ca47-11eb-9fcb-918cb1621652.png">
+
+
+<img width="753" alt="predict future data 01" src="https://user-images.githubusercontent.com/75267605/121628399-22301f80-ca47-11eb-8225-bd485faed70f.png">
+
+
+
 
 
 ## Examples
