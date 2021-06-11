@@ -105,11 +105,6 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 <img width="485" alt="Train   Test " src="https://user-images.githubusercontent.com/75267605/121627451-602c4400-ca45-11eb-98e9-7e5ac90d86c6.png">
 
 
-<img width="653" alt="train   test 01" src="https://user-images.githubusercontent.com/75267605/121627473-67535200-ca45-11eb-97da-995d1ed9ebce.png">
-
-
-<img width="763" alt="train test 02" src="https://user-images.githubusercontent.com/75267605/121627484-6cb09c80-ca45-11eb-8d88-a6f2bd581898.png">
-
 
 
 - Build ARIMA model and determine Hyperparameters of the model
