@@ -253,5 +253,26 @@ Using JavaScript and HTML for front-end development, as well as Leaflet library 
 -	The user will be able to view further details of how herd immunity was calculate through a graph that reflects COVID-19 vaccination data (percentage of individuals that are fully vaccinated)
 
 -	Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7 
+
+
 ## Demonstration 
+
+- We can select desparture and destination countries which in this case was USA and Brazil to showcase the herd immunity prediction dates and schedule of both countries  which was 15th November 2021 and 31st Jan 2022. These informations will help the potential travellers to make  intelligent decisions to travel to those countries .
+
+<img width="1276" alt="Screen Shot 2021-06-11 at 6 41 35 PM" src="https://user-images.githubusercontent.com/75267605/121755398-1430dc00-cae5-11eb-9cdd-d6ed0f2752ae.png">
+
+
+- Pop up additionaly displayed the Airport travellers could possibly travel to based on their  travel plans 
+
+
+<img width="1300" alt="Screen Shot 2021-06-11 at 6 42 33 PM" src="https://user-images.githubusercontent.com/75267605/121755408-18f59000-cae5-11eb-9594-0ebf1fc27055.png">
+
+- When the airport name is typed in it provieds a list of hotels to choose from.
+
+
+
+<img width="1126" alt="Screen Shot 2021-06-11 at 6 43 17 PM" src="https://user-images.githubusercontent.com/75267605/121755421-1eeb7100-cae5-11eb-960b-1c0f201fe9c8.png">
+
+
+
 
