@@ -5,7 +5,9 @@
 
 
 ## Presentation 
-### The presentation for the project can be accessed [here](https://docs.google.com/presentation/d/10SREyI6aJZHYDQQToGYDDiN4IGymO-KeN4DXxd2qc8g/edit#slide=id.gdd6f86eaab_0_138)
+#### ** The presentation for the project can be accessed [here](https://docs.google.com/presentation/d/10SREyI6aJZHYDQQToGYDDiN4IGymO-KeN4DXxd2qc8g/edit#slide=id.gdd6f86eaab_0_138) ** 
+ 
+#### **The jupyter notebook for the Machine Learning model can be accessed  [here](https://github.com/nasarar/Post_Covid19_Vacation_Projection/blob/main/pcvplanner.ipynb).**
 
 
 ## Purpose 
