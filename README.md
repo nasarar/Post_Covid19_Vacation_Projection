@@ -151,29 +151,79 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 - Three countries GBR,USA and ISR were identfied to generate the plots as examples for documentation.
 - 
 ### Plots for GBR
-
-#### Orginal Series and ACF
-
-<img width="960" alt="Screen Shot 2021-06-02 at 11 25 26 PM" src="https://user-images.githubusercontent.com/75267605/120582374-5e85cf00-c3fa-11eb-961e-675f69598261.png">
-
-#### 1st Order differencing and ACF
+### Plots and herd immunity prediction for CAN
 
 
-<img width="942" alt="Screen Shot 2021-06-02 at 11 26 04 PM" src="https://user-images.githubusercontent.com/75267605/120582390-62b1ec80-c3fa-11eb-943e-b75f2ee9865c.png">
+<img width="654" alt="Best_Model_pdq_can" src="https://user-images.githubusercontent.com/75267605/121689549-b96e9480-ca92-11eb-8845-62093a76ded7.png">
 
-#### 2nd Order differening and ACF
-
-
-<img width="970" alt="Screen Shot 2021-06-02 at 11 26 22 PM" src="https://user-images.githubusercontent.com/75267605/120582402-6776a080-c3fa-11eb-9705-40209b4c4164.png">
-
-#### The optimal value of differencing was done with d=2, we used Augmented Dickey–Fuller (ADF) test.
-
-<img width="823" alt="Screen Shot 2021-06-02 at 11 26 53 PM" src="https://user-images.githubusercontent.com/75267605/120582416-6b0a2780-c3fa-11eb-9cad-e04537caaa5d.png">
+<img width="794" alt="plot_can" src="https://user-images.githubusercontent.com/75267605/121689507-ad82d280-ca92-11eb-9ab6-2f796305ced1.png">
 
 
-<img width="858" alt="Screen Shot 2021-06-02 at 11 28 25 PM" src="https://user-images.githubusercontent.com/75267605/120582443-76f5e980-c3fa-11eb-900c-47e1107fbb56.png">
+<img width="840" alt="fvr_can" src="https://user-images.githubusercontent.com/75267605/121689491-a8258800-ca92-11eb-822b-88f17a1c070b.png">
 
-<img width="837" alt="Screen Shot 2021-06-02 at 11 28 36 PM" src="https://user-images.githubusercontent.com/75267605/120582508-8ffe9a80-c3fa-11eb-92e1-aef81bad0209.png">
+
+
+#### Herd Immunity for Canada is predicted to be reached by 11th September 2021
+
+
+<img width="566" alt="herd_immunity_CAN" src="https://user-images.githubusercontent.com/75267605/121689677-e9b63300-ca92-11eb-81ac-6d17bdf31eab.png">
+
+
+
+### Plots and herd immunity prediction for GBR
+
+
+#### GBR
+
+<img width="781" alt="plot_gbr" src="https://user-images.githubusercontent.com/75267605/121690302-af00ca80-ca93-11eb-802a-14f93e8e622f.png">
+
+<img width="680" alt="best_model_gbr" src="https://user-images.githubusercontent.com/75267605/121690320-b45e1500-ca93-11eb-9ed1-31fb29d5efc5.png">
+
+<img width="813" alt="fvr_gbr" src="https://user-images.githubusercontent.com/75267605/121690349-baec8c80-ca93-11eb-9e85-d1830b31d9c3.png">
+
+#### Herd Immunity for GBR is predicted to reach on 2nd October 2021
+
+
+<img width="591" alt="herd_immunity_GBR" src="https://user-images.githubusercontent.com/75267605/121690354-be801380-ca93-11eb-9ebf-29116ba0ac00.png">
+
+### Plots and herd immunity prediction for USA
+
+#### USA
+
+<img width="771" alt="plot_usa" src="https://user-images.githubusercontent.com/75267605/121690577-056e0900-ca94-11eb-80c1-86da5c6da455.png">
+
+<img width="626" alt="best_model_pdq_usa" src="https://user-images.githubusercontent.com/75267605/121690595-0a32bd00-ca94-11eb-9f11-f949e0b57178.png">
+
+<img width="783" alt="fvr_usa" src="https://user-images.githubusercontent.com/75267605/121690609-0f900780-ca94-11eb-938e-bf722364ca93.png">
+
+
+#### Herd Immunity for USA is predicted to reach on 23rd September 2021
+
+
+<img width="564" alt="herd_immunity_USA" src="https://user-images.githubusercontent.com/75267605/121690619-13238e80-ca94-11eb-8811-44ae130b78b6.png">
+
+
+
+### Plots and herd immunity prediction for AUS
+
+#### AUS
+
+<img width="768" alt="plot_Aus" src="https://user-images.githubusercontent.com/75267605/121690823-52ea7600-ca94-11eb-9538-b234059162f4.png">
+
+<img width="630" alt="best_model_aus" src="https://user-images.githubusercontent.com/75267605/121690861-5b42b100-ca94-11eb-9bf6-78e199694b79.png">
+
+
+<img width="778" alt="fvr_aus" src="https://user-images.githubusercontent.com/75267605/121690927-6f86ae00-ca94-11eb-9592-b679922bec49.png">
+
+#### Herd Immunity for AUS is predicted to reach on 29th October 2021
+
+
+<img width="551" alt="herd_immunity_AUS" src="https://user-images.githubusercontent.com/75267605/121690970-7b727000-ca94-11eb-885e-8b7515a3630a.png">
+
+
+
+
+
 
 - 
 ## Database
