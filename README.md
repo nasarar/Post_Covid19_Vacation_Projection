@@ -257,6 +257,8 @@ Using JavaScript and HTML for front-end development, as well as Leaflet library 
 
 ## Demonstration 
 
+### Post covid-19 vacation planner tab
+
 - We can select departure and destination countries which in this case was USA and Brazil to showcase the herd immunity prediction dates and schedule of both countries,  which was 15th November 2021 and 31st Jan 2022. These informations will help the potential travellers to make  intelligent decisions to travel to those countries .
 
 <img width="1276" alt="Screen Shot 2021-06-11 at 6 41 35 PM" src="https://user-images.githubusercontent.com/75267605/121755398-1430dc00-cae5-11eb-9cdd-d6ed0f2752ae.png">
@@ -272,6 +274,19 @@ Using JavaScript and HTML for front-end development, as well as Leaflet library 
 
 
 <img width="1126" alt="Screen Shot 2021-06-11 at 6 43 17 PM" src="https://user-images.githubusercontent.com/75267605/121755421-1eeb7100-cae5-11eb-960b-1c0f201fe9c8.png">
+
+### Covid 19 vaccination tab
+
+#### Vaccination rate of USA, GBR and AUS
+
+- **USA**
+<img width="910" alt="VACCINATION RATE OF USA" src="https://user-images.githubusercontent.com/75267605/121765625-4c064680-cb1a-11eb-8028-1c5113758fa6.png">
+
+-**GBR**
+<img width="843" alt="VACCINATION RATE OF GBR" src="https://user-images.githubusercontent.com/75267605/121765627-4f013700-cb1a-11eb-9e09-d13d54442e50.png">
+
+- **AUS**
+<img width="889" alt="VACCINATION RATE OF AUS" src="https://user-images.githubusercontent.com/75267605/121765631-53c5eb00-cb1a-11eb-9229-304cf79678de.png">
 
 
 # Summary of Analysis 
