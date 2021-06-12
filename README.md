@@ -280,12 +280,17 @@ Using JavaScript and HTML for front-end development, as well as Leaflet library 
 #### Vaccination rate of USA, GBR and AUS
 
 - **USA**
+
+
 <img width="910" alt="VACCINATION RATE OF USA" src="https://user-images.githubusercontent.com/75267605/121765625-4c064680-cb1a-11eb-8028-1c5113758fa6.png">
 
--**GBR**
+- **GBR**
+
 <img width="843" alt="VACCINATION RATE OF GBR" src="https://user-images.githubusercontent.com/75267605/121765627-4f013700-cb1a-11eb-9e09-d13d54442e50.png">
 
 - **AUS**
+
+
 <img width="889" alt="VACCINATION RATE OF AUS" src="https://user-images.githubusercontent.com/75267605/121765631-53c5eb00-cb1a-11eb-9229-304cf79678de.png">
 
 
