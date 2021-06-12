@@ -150,11 +150,11 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 
 ## Examples
 
-- Three countries GBR,USA and ISR were identfied to generate the plots as examples for documentation.
-- 
-### Plots for GBR
-### Plots and herd immunity prediction for CAN
+- Four  countries CAN, USA, GBR and AUS  were identfied to generate the plots as examples for documentation.
 
+
+### Plots and herd immunity prediction for CAN
+#### **CAN**
 
 <img width="654" alt="Best_Model_pdq_can" src="https://user-images.githubusercontent.com/75267605/121689549-b96e9480-ca92-11eb-8845-62093a76ded7.png">
 
@@ -165,7 +165,7 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 
 
 
-#### Herd Immunity for Canada is predicted to be reached by 11th September 2021
+#### **Herd Immunity for Canada is predicted to be reached by 11th September 2021**
 
 
 <img width="566" alt="herd_immunity_CAN" src="https://user-images.githubusercontent.com/75267605/121689677-e9b63300-ca92-11eb-81ac-6d17bdf31eab.png">
@@ -175,7 +175,7 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 ### Plots and herd immunity prediction for GBR
 
 
-#### GBR
+#### **GBR**
 
 <img width="781" alt="plot_gbr" src="https://user-images.githubusercontent.com/75267605/121690302-af00ca80-ca93-11eb-802a-14f93e8e622f.png">
 
@@ -183,14 +183,14 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 
 <img width="813" alt="fvr_gbr" src="https://user-images.githubusercontent.com/75267605/121690349-baec8c80-ca93-11eb-9e85-d1830b31d9c3.png">
 
-#### Herd Immunity for GBR is predicted to reach on 2nd October 2021
+#### **Herd Immunity for GBR is predicted to reach on 2nd October 2021**
 
 
 <img width="591" alt="herd_immunity_GBR" src="https://user-images.githubusercontent.com/75267605/121690354-be801380-ca93-11eb-9ebf-29116ba0ac00.png">
 
 ### Plots and herd immunity prediction for USA
 
-#### USA
+#### **USA**
 
 <img width="771" alt="plot_usa" src="https://user-images.githubusercontent.com/75267605/121690577-056e0900-ca94-11eb-80c1-86da5c6da455.png">
 
@@ -199,7 +199,7 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 <img width="783" alt="fvr_usa" src="https://user-images.githubusercontent.com/75267605/121690609-0f900780-ca94-11eb-938e-bf722364ca93.png">
 
 
-#### Herd Immunity for USA is predicted to reach on 23rd September 2021
+#### **Herd Immunity for USA is predicted to reach on 23rd September 2021**
 
 
 <img width="564" alt="herd_immunity_USA" src="https://user-images.githubusercontent.com/75267605/121690619-13238e80-ca94-11eb-8811-44ae130b78b6.png">
@@ -208,7 +208,7 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 
 ### Plots and herd immunity prediction for AUS
 
-#### AUS
+#### **AUS**
 
 <img width="768" alt="plot_Aus" src="https://user-images.githubusercontent.com/75267605/121690823-52ea7600-ca94-11eb-9538-b234059162f4.png">
 
@@ -217,7 +217,7 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 
 <img width="778" alt="fvr_aus" src="https://user-images.githubusercontent.com/75267605/121690927-6f86ae00-ca94-11eb-9592-b679922bec49.png">
 
-#### Herd Immunity for AUS is predicted to reach on 29th October 2021
+#### **Herd Immunity for AUS is predicted to reach on 29th October 2021**
 
 
 <img width="551" alt="herd_immunity_AUS" src="https://user-images.githubusercontent.com/75267605/121690970-7b727000-ca94-11eb-885e-8b7515a3630a.png">
@@ -229,7 +229,7 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 
 - 
 ## Database
-# SQLite
+### **SQLite**
 - Script.py.ipynb is the script used to create the database in SQLite. Used pandas and python to query the database to create tables. Ran the jupyter notebook to test the code. 
 - World_data_forecast.csv file and the json created is in the resources folder. 
 - Used Flask to connect database to the web application.
