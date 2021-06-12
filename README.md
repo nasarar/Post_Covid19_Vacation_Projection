@@ -238,6 +238,38 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 - World_data_forecast.csv file and the json created is in the resources folder. 
 - Used Flask to connect database to the web application.
 
+
+### Data base - import, connect, execute and transfert o webapp through flask 
+
+
+- Import required libraries 
+
+<img width="384" alt="Import" src="https://user-images.githubusercontent.com/75267605/121779415-82b77d80-cb69-11eb-9c54-377812d7e697.png">
+
+- Connect to Sql database
+
+<img width="511" alt="connect" src="https://user-images.githubusercontent.com/75267605/121779420-877c3180-cb69-11eb-8d00-c51dd74d3d67.png">
+
+- Execute a query 
+
+<img width="984" alt="Execute " src="https://user-images.githubusercontent.com/75267605/121779426-8f3bd600-cb69-11eb-8208-96069ded50d8.png">
+
+- Database block diagram 
+
+<img width="713" alt="database sd" src="https://user-images.githubusercontent.com/75267605/121779434-9b279800-cb69-11eb-8208-5f7d35cc5946.png">
+
+
+- Raw Data 
+<img width="1618" alt="database01" src="https://user-images.githubusercontent.com/75267605/121779443-a2e73c80-cb69-11eb-8fa4-0a0a80b5142c.png">
+
+- Prediction forecast herd immunity data recieved from Machine learning Model and converted to json and transfered to webapp
+
+<img width="651" alt="database02" src="https://user-images.githubusercontent.com/75267605/121779446-a7135a00-cb69-11eb-95b4-bfb5a156829d.png">
+
+
+<img width="736" alt="database03" src="https://user-images.githubusercontent.com/75267605/121779451-abd80e00-cb69-11eb-991c-008a7336e57b.png">
+
+
 ## Website & Visualizations
 
 Using JavaScript and HTML for front-end development, as well as Leaflet library and other tools to create visual representation of our data and results.
