@@ -274,5 +274,24 @@ Using JavaScript and HTML for front-end development, as well as Leaflet library 
 <img width="1126" alt="Screen Shot 2021-06-11 at 6 43 17 PM" src="https://user-images.githubusercontent.com/75267605/121755421-1eeb7100-cae5-11eb-960b-1c0f201fe9c8.png">
 
 
+# Summary of Analysis 
+
+- The post covid19 travel planner is built on the Time series ARIMA model by identifying the right hyperparameters (p,d,q) for each countries.
+- The Hyperparameters (p,d,q) range is identfied by for loop method wherein least RSME ( root square mean error) provides the highest range of hyperparameters(p,d,q).
+- The Hyperparameters identfied for our data range and countries was 7,0,0
+- We see a definte surge in the vaccination drive among countries who are manfacturing the vaccines.
+- Countries like USA, UK (GBR), Russia, Israel are expected to reach herd immunity by fourth quarter of 2021.
+- The webapp is designed to have its input from the prediction updated data daily in order to have an update herd immunity data for each country listed in the app.
+- Sqllite data base is used for faster deployment with local access 
+- Sqllite has its disadvantes of limitations with access and security features. 
+
+# Recommendation for future analysis
+
+- Regular daily update of data in the data pool will assist the model to provide better prediction process.
+- Better and safe data base like AWS and postgress will help the mdoel to be more safe and rugged 
+- The webapp and model can be better utlized for NGO's to assist and speed up vaccination process for countries which have delayed reach in its herd immunity.
+
+
+
 
 
