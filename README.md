@@ -230,8 +230,6 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 
 
 
-
-- 
 ## Database
 ### **SQLite**
 - Script.py.ipynb is the script used to create the database in SQLite. Used pandas and python to query the database to create tables. Ran the jupyter notebook to test the code. 
@@ -239,7 +237,7 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 - Used Flask to connect database to the web application.
 
 
-### Data base - import, connect, execute and transfert o webapp through flask 
+### Data base - import, connect, execute and transfer to webapp through flask 
 
 
 - Import required libraries 
