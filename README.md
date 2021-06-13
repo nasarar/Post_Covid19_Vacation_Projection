@@ -277,11 +277,11 @@ NGO's directed by WHO/UN can then send a team with vaccinations and mobile medic
 
 Using JavaScript and HTML for front-end development, as well as Leaflet library and other tools to create visual representation of our data and results.
 
-•	Users will be able to select a country from a dropdown list (e.g. departure or destination country)
+- Users will be able to select a country from a dropdown list (e.g. departure or destination country)
 
-• 	Once the user has selected the departure or destination country, the website will generate when herd immunity will be reached in that country in 	accordance with our machine learning model. 
+- Once the user has selected the departure or destination country, the website will generate when herd immunity will be reached in that country in accordance with our machine learning model. 
 
-•	An interactive map will include popup markers of airports in the chosen countries based on the aviationstack API (https://aviationstack.com/) 
+- An interactive map will include popup markers of airports in the chosen countries based on the aviationstack API (https://aviationstack.com/) 
 
 <img src = "https://github.com/nasarar/Post_Covid19_Vacation_Projection/blob/955bc001563294e8d3cae6aaecf5981e2250d10d/map.png">
 
@@ -290,8 +290,10 @@ Using JavaScript and HTML for front-end development, as well as Leaflet library 
 <img src = "https://github.com/nasarar/Post_Covid19_Vacation_Projection/blob/955bc001563294e8d3cae6aaecf5981e2250d10d/hotels.png">
 
 -	The user will be able to view further details of how herd immunity was calculate through a graph that reflects COVID-19 vaccination data (percentage of individuals that are fully vaccinated)
+-	flask_app has all the files required for local deployment of codes to pick the database updated daily in order predict the herd immunity of the country you plan to travel to. 
+-	The plan in near future is to automate the database and website with postgres and relevant codes to provide a interactive tool for your gateway for safe travel.
 
--	Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7  
+- Website Template: https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7  
 
 
 ## Demonstration 
