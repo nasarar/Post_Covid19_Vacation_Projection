@@ -9,6 +9,11 @@
  
 #### **The jupyter notebook for the Machine Learning model can be accessed  [here](https://github.com/nasarar/Post_Covid19_Vacation_Projection/blob/main/pcvplanner.ipynb).**
 
+#### **The website template for the webapp can be accessed  [here](https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7).**
+
+
+
+
 
 ## Purpose 
 
