@@ -23,7 +23,7 @@ The project aims to identify and forecast countries that will reach herd immunit
 
 The herd immunity is reached when 70% of the population are fully vaccinated with both the doses.
 
-The people planning to travel in the near future can visit the website ............. and check for a future date for travel to a particular destination, and the model will help them to know the countries that will reach herd immunity and will mark it as safe for travel.
+The people planning to travel in the near future can visit the website and check for a future date for travel to a particular destination, and the model will help them to know the countries that will reach herd immunity and will mark it as safe for travel.
 
 The model can also be fine-tuned for NGOs to know which countries will need help in reaching the herd immunity by providing the details of the earliest date and year by which a particular country can be marked safe for travel. 
 
