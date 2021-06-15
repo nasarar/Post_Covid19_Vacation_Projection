@@ -11,6 +11,8 @@
 
 #### **The website template for the webapp can be accessed  [here](https://whimsical.com/covid-19-Wt8H3eaXMasUUiv68tSpT7).**
 
+#### **The Heroku link  for the webapp can be accessed  [here](https://covid19-vacation-planner.herokuapp.com/).**
+
 
 
 
